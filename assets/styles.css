@@ -313,7 +313,6 @@ main{margin-inline-start:280px;}
   }
 }
 
-
 /* Responsive stat card */
 .stat-card{
   display:grid;
@@ -345,3 +344,4 @@ main{margin-inline-start:280px;}
 .stat-card strong{word-break:break-word; overflow-wrap:anywhere;}
 .stat-card a{color:inherit; text-decoration:none;}
 .stat-card a:hover{text-decoration:underline;}
+
