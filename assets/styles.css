@@ -253,7 +253,7 @@ main{margin-inline-start:280px;}
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 8px 12px;
+  padding: .75rem 1rem;
   border-radius: .8rem;
   text-decoration: none;
   font-weight: 600;
