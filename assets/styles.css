@@ -177,7 +177,7 @@ main{margin-inline-start:280px;}
   white-space: nowrap;
   overflow: hidden;
   border-right: 2px solid currentColor;   width: 0;                    
-              --chars: 21;             
+              --chars: 24;             
                      animation:
     typing 4.5s steps(var(--chars)) 0s infinite both,
     caret-blink .8s step-end infinite;
@@ -372,3 +372,7 @@ main{margin-inline-start:280px;}
 #contact{
   margin-bottom: 4%;
 }
+
+.role-line { color:red !important; }          
+.role-line .neutral { color:black !important; }  
+
