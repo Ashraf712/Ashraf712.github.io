@@ -2,7 +2,7 @@
 :root{--bg:#0b1220;--bg-alt:#0f172a;--card:#111827;--text:#e5e7eb;--muted:#9ca3af;--brand:#38bdf8;--accent:#10b981;--ring:rgba(56,189,248,.5)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}
 body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,'Helvetica Neue',Arial;background:linear-gradient(180deg,#030712,#0b1220 30%,#0b1220);color:var(--text);line-height:1.6}
-.container{max-width:1200px;margin:0 auto;padding:0 1.2rem}.section{padding:4rem 0; padding-bottom: 0px !important;}.section.alt{background:linear-gradient(180deg,transparent,rgba(255,255,255,0.02),transparent)}
+.container{max-width:1200px;margin:0 auto;padding:0 0.8rem}.section{padding:4rem 0; padding-bottom: 0px !important;}.section.alt{background:linear-gradient(180deg,transparent,rgba(255,255,255,0.02),transparent)}
 h1,h2,h3,h4{line-height:1.2;margin:0 0 1rem}h1{font-size:clamp(2.2rem,3vw,3.2rem);font-weight:800}h2{font-size:clamp(1.6rem,2.2vw,2.2rem);font-weight:700}h3{font-size:1.05rem;font-weight:600}h4{font-size:.95rem;margin-top:.5rem;color:#dbeafe}.muted{color:var(--muted)}
 .site-header{position:sticky;top:0;z-index:1000;display:flex;align-items:center;gap:.5rem;justify-content:space-between;padding:.6rem 1rem;background:rgba(3,7,18,.6);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.06)}
 .brand{font-weight:900;color:white;text-decoration:none;font-size:1.25rem;letter-spacing:.2px}.brand .dot{color:var(--brand)}
@@ -46,8 +46,8 @@ h1,h2,h3,h4{line-height:1.2;margin:0 0 1rem}h1{font-size:clamp(2.2rem,3vw,3.2rem
   .nav ul{display:none}
   .nav-toggle{display:block}
   .nav[aria-expanded="true"] ul{display:flex;flex-direction:column;position:absolute;right:1rem;top:3rem;background:#0b1220;padding:1rem;border-radius:12px;border:1px solid rgba(255,255,255,.1)}
-  .col-6{grid-column:span 12}
-  .projects-grid .project{grid-column:span 12}
+  .col-6{grid-column:span 14}
+  .projects-grid .project{grid-column:span 14}
 }
 
 .reveal{opacity:0;transform:translateY(12px);transition:opacity .6s ease, transform .6s ease}.reveal.in{opacity:1;transform:translateY(0)}
@@ -62,7 +62,8 @@ h1,h2,h3,h4{line-height:1.2;margin:0 0 1rem}h1{font-size:clamp(2.2rem,3vw,3.2rem
   flex-direction:column;
   align-items:stretch;
   gap:1rem;
-  padding:1rem;
+  /* padding:1rem; */
+  padding:0.5rem;
   background:rgba(3,7,18,.7);
   backdrop-filter:blur(10px);
   border-right:1px solid rgba(255,255,255,.06);
