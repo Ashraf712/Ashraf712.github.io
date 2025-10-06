@@ -293,8 +293,8 @@ main{margin-inline-start:280px;}
   display: flex;
   align-items: center;
   gap: .6rem;
-  flex-wrap: nowrap;               /* <-- stay on one line */
-  overflow-x: auto;                /* scroll if they don't fit */
+  flex-wrap: nowrap;               
+  /* overflow-x: auto;               */
   -webkit-overflow-scrolling: touch;
   padding-bottom: 4px;             /* room for scroll bar on iOS */
 }
