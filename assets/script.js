@@ -1,4 +1,3 @@
-
 (function(){
   const htmlEl = document.documentElement;
   function setLanguage(lang){
@@ -52,6 +51,12 @@
         e.preventDefault();
         const y = el.getBoundingClientRect().top + window.pageYOffset - 68;
         window.scrollTo({top: y, behavior: 'smooth'});
+      }
+
+      // Close the mobile nav if it is open so the menu hides after navigation
+      if (nav && nav.getAttribute('aria-expanded') === 'true') {
+        nav.setAttribute('aria-expanded', 'false');
+        navToggle?.setAttribute('aria-expanded', 'false');
       }
     });
   });
