@@ -284,54 +284,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-// // === Portfolio QR Section ===
-// (function(){
-//   const qrUrl = "https://ashraf712.github.io/";
-//   const qrImage = document.getElementById("qrImage");
-//   const downloadBtn = document.getElementById("downloadQR");
-//   const shareBtn = document.getElementById("shareQR");
-
-//   if (!qrImage) return;
-
-//   // Generate the QR using a reliable Google API (no dependencies)
-//   const qrAPI = `https://api.qrserver.com/v1/create-qr-code/?data=${encodeURIComponent(qrUrl)}&size=200x200`;
-//   qrImage.src = qrAPI;
-//   downloadBtn.href = qrAPI;
-
-//   // Web Share API logic
-//   shareBtn?.addEventListener("click", async () => {
-//     try {
-//       const blob = await fetch(qrAPI).then(res => res.blob());
-//       const file = new File([blob], "Ashraf_QR.png", { type: blob.type });
-//       if (navigator.share && navigator.canShare && navigator.canShare({ files: [file] })) {
-//         await navigator.share({
-//           title: "Ashraf Portfolio",
-//           text: "Check out Ashraf Ali Shaik’s portfolio",
-//           files: [file],
-//           url: qrUrl
-//         });
-//       } else {
-//         await navigator.clipboard.writeText(qrUrl);
-//         alert("Link copied to clipboard!");
-//       }
-//     } catch (err) {
-//       console.error("Share failed:", err);
-//       alert("Could not share QR. Link copied instead!");
-//       await navigator.clipboard.writeText(qrUrl);
-//     }
-//   });
-// })();
-
-
 // QR download helper — use instead of directly linking to external qrAPI
 (function(){
   const qrUrl = "https://ashraf712.github.io/";
@@ -409,7 +361,7 @@
     } catch (err) {
       console.error('Share failed', err);
       try { await navigator.clipboard.writeText(qrUrl); alert('Link copied to clipboard'); }
-      catch { alert('Could not share or copy link'); }
+      catch {  }
     }
   });
 
