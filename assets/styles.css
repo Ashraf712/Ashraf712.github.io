@@ -209,6 +209,14 @@ main{margin-inline-start:280px;}
   #hero .hero-typed {
     color: inherit;
   }
+/* .hero-title
+ {
+ 
+    color:#f59e0b !important;  
+  } */
+
+
+
 
     #hero .btn,
   #hero .btn.ghost {
@@ -376,3 +384,111 @@ main{margin-inline-start:280px;}
 .role-line { color:red !important; }          
 .role-line .neutral { color:black !important; }  
 
+
+
+#shareMainBtn{
+border:solid lightgray 1px;
+padding: .75rem 1rem;
+}
+@media (max-width: 600px) {
+  #shareMainBtn {
+    padding: .55rem 0.8rem;
+  }
+}
+
+
+
+
+/* Share button + menu + toast (small & neutral) */
+.share-wrap{position:relative;display:inline-block}
+#shareBtn{cursor:pointer; width: 100%;padding:.45rem .7rem;}
+.share-menu{
+  display:none;
+  position:absolute;
+  right:0; /* will respect RTL if you switch logic (use left:0 for forced left) */
+  top:calc(100% + 8px);
+  min-width:200px;
+  background:var(--card,#0f172a);
+  border:1px solid rgba(255,255,255,.06);
+  border-radius:10px;
+  box-shadow:0 12px 30px rgba(0,0,0,.4);
+  padding:.5rem;
+  z-index:1200;
+}
+[dir="rtl"] .share-menu{ right:auto; left:0; } /* keep it RTL friendly */
+
+.share-menu a, .share-menu button{
+  display:block;
+  text-decoration:none;
+  color:var(--text,#e5e7eb);
+  padding:.45rem .6rem;
+  border-radius:8px;
+  font-size:.95rem;
+  background:transparent;
+  border:0;
+  text-align:left;
+  width:100%;
+}
+.share-menu a:hover, .share-menu button:hover{ background:rgba(255,255,255,.03) }
+
+.share-menu.show{ display:block; animation:pop .12s ease both; }
+@keyframes pop{ from{opacity:0; transform:translateY(-6px)} to{opacity:1; transform:none} }
+
+.share-toast{
+  position:fixed;
+  right:20px;
+  bottom:28px;
+  background:rgba(0,0,0,.8);
+  color:white;
+  padding:.45rem .9rem;
+  border-radius:999px;
+  font-size:.95rem;
+  opacity:0;
+  pointer-events:none;
+  transform:translateY(8px);
+  transition:opacity .18s ease, transform .18s ease;
+  z-index:1300;
+}
+[dir="rtl"] .share-toast{ right:auto; left:20px; }
+.share-toast.visible{ opacity:1; pointer-events:auto; transform:none; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.qr-box {
+  margin: 1rem 0 0 0;
+  display: inline-block;
+  padding: 1rem;
+  /* background: var(--card, #0f172a); */
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,.3);
+}
+
+.qr-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .8rem;
+  /* margin-top: .8rem; */
+}
+
+.qr-actions .btn {
+  min-width: 140px;
+}
+
+@media (max-width: 600px) {
+  .qr-box img {
+    width: 140px;
+    height: 140px;
+  }
+}

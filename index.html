@@ -32,16 +32,42 @@
     <div class="actions">
 
       <a href="assets/Ashraf_CV.pdf" download="Ashraf_Ali_Shaik_Senior_Net_Developer_CV.pdf" class="btn small"
-        id="cvBtn">Download CV</a>
+        id="cvBtn">  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  style="vertical-align:middle; margin-right:6px;">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+               CV</a>
+
+        <!-- Share button (place inside .actions) -->
+<div class="share-wrap" id="shareWrap">
+  <button id="shareBtn" class="btn small" aria-haspopup="menu" aria-expanded="false" title="Share portfolio">
+    Share
+  </button>
+
+  <!-- fallback menu with direct links (hidden by default) -->
+  <div id="shareMenu" class="share-menu" role="menu" aria-hidden="true">
+    <a id="shareTwitter" role="menuitem" href="#" target="_blank" rel="noopener">Share on Twitter</a>
+    <a id="shareLinkedIn" role="menuitem" href="#" target="_blank" rel="noopener">Share on LinkedIn</a>
+    <a id="shareWhatsApp" role="menuitem" href="#" target="_blank" rel="noopener">Share on WhatsApp</a>
+    <a id="shareEmail" role="menuitem" href="#" target="_blank" rel="noopener">Share by Email</a>
+    <button id="copyLink" class="pill" type="button">Copy link</button>
+  </div>
+</div>
+
+<!-- small toast for copy feedback -->
+<div id="shareToast" class="share-toast" aria-hidden="true">Link copied to clipboard</div>
+
     </div>
   </header>
 
   <main>
     <section id="hero" class="section hero reveal">
       <div class="container hero-grid">
-
         <div class="col-6 hero-left">
-          <h1 class="hero-title">Ashraf Ali Shaik</h1>
+         <h1 class="hero-title">Ashraf Ali Shaik</h1>
           <!-- <p class="hero-sub"><strong>Senior</strong> Technical Lead / Technical Project Manager / .NET Developer <br>• 11+ years, Kuwait</p> -->
           <p class="hero-sub role-line">
             <strong><span class="neutral">Senior</span> Technical Lead
@@ -53,19 +79,27 @@
               <br><span class="neutral">Managed, led, and developed</span> <strong><span>27+</span></strong><span
                 class="neutral"> applications</span></strong>
           </p>
-
-          <!-- <div class="text-center" style="text-align: center;">
-            <p class="hero-typed" aria-live="polite">I'm a Senior ,<br> Technical Lead <br> Technical Project Manager <br> .NET Developer<br> This is my Portfolio Site</p>
-          </div> -->
           <div class="text-center" style="text-align: center;">
             <p class="hero-typed" aria-live="polite">I welcome you to my Portfolio.....</p>
           </div>
 
           <div class="hero-ctas">
 
-            <a class="btn" id="dlBtn" href="assets/Ashraf_CV.pdf" download="Ashraf_Ali_Shaik_Senior_Net_CV.pdf">
+            <!-- <a class="btn" id="dlBtn" href="assets/Ashraf_CV.pdf" download="Ashraf_Ali_Shaik_Senior_Net_CV.pdf">
               Download CV
+            </a> -->
+
+            <a class="btn" id="dlBtn" href="assets/Ashraf_CV.pdf" download="Ashraf_Ali_Shaik_Senior_Net_CV.pdf">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  style="vertical-align:middle; margin-right:6px;">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+              CV
             </a>
+
 
             <a class="btn" href="#contact" id="contactBtn">Contact Me</a>
             <a class="linkedin-link" href="https://www.linkedin.com/in/ashraf-ali-b43aa321a" target="_blank"
@@ -77,11 +111,63 @@
                 </path>
               </svg>
             </a>
-          </div>
-          <div class="hero-social">
+              <a id="shareMainBtn" class="btn small ghost" role="button" title="Share portfolio">
+             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+     style="vertical-align:middle; margin-right:6px;">
+  <circle cx="18" cy="5" r="3" />
+  <circle cx="6" cy="12" r="3" />
+  <circle cx="18" cy="19" r="3" />
+  <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
+  <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
+</svg>
 
-          </div>
+                Share
+              </a>
+          </div>  
+   
+      <center>
+       <section id="qr" class="reveal">
+                <div class="container text-center"> 
+                  <div class="qr-box">
+                    <img id="qrImage" src="" alt="Portfolio QR Code" width="180" height="180">
+                  </div>
+                  <div class="qr-actions">
+                    <!-- <a class="btn" id="openSiteBtn" href="https://ashraf712.github.io/" target="_blank" rel="noopener">
+                      Open Website
+                    </a> -->
+                    <a class="btn ghost" id="downloadQR" download="Ashraf_QR.png">  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  style="vertical-align:middle; margin-right:6px;">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg> QR</a>
+                    <a class="btn ghost" id="shareQR"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+     style="vertical-align:middle; margin-right:6px;">
+  <circle cx="18" cy="5" r="3" />
+  <circle cx="6" cy="12" r="3" />
+  <circle cx="18" cy="19" r="3" />
+  <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
+  <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
+</svg>
+ QR</a>
+                  </div>
+                </div>
+          </section>
+          </center> 
+
+          
         </div>
+
+
+
+
+
+
+        
+        
         <div class="col-6 hero-right">
           <img src="assets/Ashraf.jpg" onerror="this.src='assets/Ashraf.jpg';" alt="Profile photo"
             class="profile-img" />
@@ -94,16 +180,7 @@
       <div class="container">
 
         <div class="about-section">
-          <h2>About</h2>
-          <!-- <p>
-            <strong style="color:red;">Senior Technical Lead / Technical Project Manager / .NET Developer with over 11
-              years of comprehensive IT/software development
-              experience</strong>
-            across analysis, design, development, testing, deployment, and maintenance of enterprise applications.
-            Specialized in building <strong>web, desktop, and service-based solutions</strong> using
-            C#, ASP.NET (Core/MVC/WebForms), Windows Services, REST/SOAP APIs, and advanced database design
-            on SQL Server, MySQL, and Oracle.
-          </p> -->
+          <h2>About</h2>        
           <p>
             <strong style="color:red;">Senior Technical Lead / Technical Project Manager / .NET Developer with 11+ years
               of end-to-end delivery</strong>
@@ -423,7 +500,6 @@
           </div>
         </div>
         <div class="projects-grid">
-
           <article class="card project">
             <header>
               <h3>TeltraOne ERP</h3>
