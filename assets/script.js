@@ -293,40 +293,125 @@
 
 
 
-// === Portfolio QR Section ===
+// // === Portfolio QR Section ===
+// (function(){
+//   const qrUrl = "https://ashraf712.github.io/";
+//   const qrImage = document.getElementById("qrImage");
+//   const downloadBtn = document.getElementById("downloadQR");
+//   const shareBtn = document.getElementById("shareQR");
+
+//   if (!qrImage) return;
+
+//   // Generate the QR using a reliable Google API (no dependencies)
+//   const qrAPI = `https://api.qrserver.com/v1/create-qr-code/?data=${encodeURIComponent(qrUrl)}&size=200x200`;
+//   qrImage.src = qrAPI;
+//   downloadBtn.href = qrAPI;
+
+//   // Web Share API logic
+//   shareBtn?.addEventListener("click", async () => {
+//     try {
+//       const blob = await fetch(qrAPI).then(res => res.blob());
+//       const file = new File([blob], "Ashraf_QR.png", { type: blob.type });
+//       if (navigator.share && navigator.canShare && navigator.canShare({ files: [file] })) {
+//         await navigator.share({
+//           title: "Ashraf Portfolio",
+//           text: "Check out Ashraf Ali Shaik’s portfolio",
+//           files: [file],
+//           url: qrUrl
+//         });
+//       } else {
+//         await navigator.clipboard.writeText(qrUrl);
+//         alert("Link copied to clipboard!");
+//       }
+//     } catch (err) {
+//       console.error("Share failed:", err);
+//       alert("Could not share QR. Link copied instead!");
+//       await navigator.clipboard.writeText(qrUrl);
+//     }
+//   });
+// })();
+
+
+// QR download helper — use instead of directly linking to external qrAPI
 (function(){
   const qrUrl = "https://ashraf712.github.io/";
+  const qrAPI = `https://api.qrserver.com/v1/create-qr-code/?data=${encodeURIComponent(qrUrl)}&size=200x200`;
+
   const qrImage = document.getElementById("qrImage");
   const downloadBtn = document.getElementById("downloadQR");
   const shareBtn = document.getElementById("shareQR");
 
-  if (!qrImage) return;
+  if (!qrImage || !downloadBtn) return;
 
-  // Generate the QR using a reliable Google API (no dependencies)
-  const qrAPI = `https://api.qrserver.com/v1/create-qr-code/?data=${encodeURIComponent(qrUrl)}&size=200x200`;
+  // show the QR for preview
   qrImage.src = qrAPI;
-  downloadBtn.href = qrAPI;
 
-  // Web Share API logic
-  shareBtn?.addEventListener("click", async () => {
+  // PREVIEW: keep the href so clicking directly still opens the image in a new tab
+  downloadBtn.setAttribute('href', qrAPI);
+  downloadBtn.setAttribute('target', '_blank');
+  downloadBtn.setAttribute('rel', 'noopener');
+
+  // When user clicks Download, fetch the image blob and trigger client-side download
+  downloadBtn.addEventListener('click', async function (e) {
+    e.preventDefault(); // prevent default navigation
+
+    // small UI feedback: disable while fetching
+    downloadBtn.classList.add('loading');
+    downloadBtn.setAttribute('aria-disabled', 'true');
+
     try {
-      const blob = await fetch(qrAPI).then(res => res.blob());
+      const resp = await fetch(qrAPI, { mode: 'cors' });
+      if (!resp.ok) throw new Error('Network response was not ok');
+
+      const blob = await resp.blob();
+      const filename = 'Ashraf_QR.png';
+      const objectUrl = URL.createObjectURL(blob);
+
+      // Create a temporary anchor to trigger download (works across browsers)
+      const temp = document.createElement('a');
+      temp.href = objectUrl;
+      temp.download = filename;
+      document.body.appendChild(temp);
+      temp.click();
+      temp.remove();
+
+      // release memory
+      setTimeout(() => URL.revokeObjectURL(objectUrl), 1500);
+
+    } catch (err) {
+      console.error('QR download failed', err);
+      // Fallback: open in new tab for user to manually save
+      window.open(qrAPI, '_blank', 'noopener');
+    } finally {
+      downloadBtn.classList.remove('loading');
+      downloadBtn.removeAttribute('aria-disabled');
+    }
+  });
+
+  // Optional: share button (as you already had) - keep as-is
+  shareBtn?.addEventListener('click', async () => {
+    try {
+      const resp = await fetch(qrAPI, { mode: 'cors' });
+      const blob = await resp.blob();
       const file = new File([blob], "Ashraf_QR.png", { type: blob.type });
+
       if (navigator.share && navigator.canShare && navigator.canShare({ files: [file] })) {
         await navigator.share({
           title: "Ashraf Portfolio",
-          text: "Check out Ashraf Ali Shaik’s portfolio",
+          text: "Check out my portfolio",
           files: [file],
           url: qrUrl
         });
       } else {
         await navigator.clipboard.writeText(qrUrl);
-        alert("Link copied to clipboard!");
+        alert('Link copied to clipboard');
       }
     } catch (err) {
-      console.error("Share failed:", err);
-      alert("Could not share QR. Link copied instead!");
-      await navigator.clipboard.writeText(qrUrl);
+      console.error('Share failed', err);
+      try { await navigator.clipboard.writeText(qrUrl); alert('Link copied to clipboard'); }
+      catch { alert('Could not share or copy link'); }
     }
   });
+
 })();
+
