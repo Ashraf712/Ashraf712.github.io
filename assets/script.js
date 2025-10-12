@@ -53,7 +53,6 @@
         window.scrollTo({top: y, behavior: 'smooth'});
       }
 
-      // Close the mobile nav if it is open so the menu hides after navigation
       if (nav && nav.getAttribute('aria-expanded') === 'true') {
         nav.setAttribute('aria-expanded', 'false');
         navToggle?.setAttribute('aria-expanded', 'false');
@@ -105,9 +104,6 @@
 
 
 
-
-
-// Share button logic (append into your existing script.js)
 (function(){
   const shareBtn = document.getElementById('shareBtn');
   const shareMenu = document.getElementById('shareMenu');
@@ -115,7 +111,6 @@
   const copyBtn = document.getElementById('copyLink');
   const toast = document.getElementById('shareToast');
 
-  // Title + url to share (adjust if you want a different link)
   const shareData = {
     title: document.title || 'Ashraf — Portfolio',
     text: 'Check out my portfolio — Ashraf Ali Shaik',
@@ -129,27 +124,21 @@
     setTimeout(()=>{ toast.classList.remove('visible'); toast.setAttribute('aria-hidden','true'); }, 2000);
   }
 
-  // Web Share API first
   shareBtn?.addEventListener('click', async (e) => {
-    // If Web Share available, open native share sheet
     if (navigator.share) {
       try {
         await navigator.share(shareData);
-        // Optional: you can show a small confirmation
       } catch (err) {
-        // user cancelled or error — silently ignore
       }
       return;
     }
 
-    // Otherwise toggle the fallback menu
     const isOpen = shareMenu.classList.contains('show');
     shareMenu.classList.toggle('show', !isOpen);
     shareBtn.setAttribute('aria-expanded', String(!isOpen));
     shareMenu.setAttribute('aria-hidden', String(isOpen));
   });
 
-  // Close fallback menu on outside click
   document.addEventListener('click', (ev) => {
     if (!shareWrap.contains(ev.target)) {
       shareMenu.classList.remove('show');
@@ -158,7 +147,6 @@
     }
   });
 
-  // Setup fallback share links (encode)
   const url = encodeURIComponent(shareData.url);
   const text = encodeURIComponent(shareData.text + ' — ' + shareData.title);
 
@@ -172,14 +160,12 @@
   if (whatsapp) whatsapp.href = `https://wa.me/?text=${text}%20${url}`;
   if (email) email.href = `mailto:?subject=${encodeURIComponent(shareData.title)}&body=${encodeURIComponent(shareData.text + '\n' + shareData.url)}`;
 
-  // Copy-to-clipboard fallback
   copyBtn?.addEventListener('click', async () => {
     try {
       if (navigator.clipboard && navigator.clipboard.writeText) {
         await navigator.clipboard.writeText(shareData.url);
         showToast('Link copied to clipboard');
       } else {
-        // old execCommand fallback
         const el = document.createElement('textarea');
         el.value = shareData.url;
         document.body.appendChild(el);
@@ -193,7 +179,6 @@
     }
   });
 
-  // keyboard: close menu with ESC
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
       shareMenu.classList.remove('show');
@@ -203,17 +188,6 @@
 })();
 
 
-
-
-
-
-
-
-
-
-
-
-// Inline: second share button (main content)
 (function(){
   const btn = document.getElementById('shareMainBtn');
   if(!btn) return;
@@ -225,7 +199,6 @@
   };
 
   const showToast = (msg='Link copied to clipboard') => {
-    // Reuse existing toast if present, else quick fallback
     const toast = document.getElementById('shareToast');
     if (toast) {
       toast.textContent = msg;
@@ -234,7 +207,6 @@
       setTimeout(()=>{ toast.classList.remove('visible'); toast.setAttribute('aria-hidden','true'); }, 2000);
       return;
     }
-    // small ephemeral fallback
     const t = document.createElement('div');
     t.textContent = msg;
     Object.assign(t.style,{position:'fixed',right:'20px',bottom:'28px',background:'rgba(0,0,0,.8)',color:'#fff',padding:'.4rem .8rem',borderRadius:'999px',zIndex:9999});
@@ -243,17 +215,17 @@
   };
 
   btn.addEventListener('click', async (e) => {
-    // try Web Share API
+
     if (navigator.share) {
       try {
         await navigator.share(shareData);
         return;
       } catch (err) {
-        // user cancelled or error — continue to fallback
+       
       }
     }
 
-    // fallback: copy link to clipboard
+   
     try {
       if (navigator.clipboard && navigator.clipboard.writeText) {
         await navigator.clipboard.writeText(shareData.url);
@@ -268,7 +240,6 @@
         showToast('Link copied to clipboard');
       }
     } catch (err) {
-      // If copy failed, open share menu links if a share menu exists
       const menu = document.getElementById('shareMenu');
       if (menu) {
         menu.classList.add('show');
@@ -284,7 +255,6 @@
 
 
 
-// QR download helper — use instead of directly linking to external qrAPI
 (function(){
   const qrUrl = "https://ashraf712.github.io/";
   const qrAPI = `https://api.qrserver.com/v1/create-qr-code/?data=${encodeURIComponent(qrUrl)}&size=200x200`;
@@ -295,19 +265,15 @@
 
   if (!qrImage || !downloadBtn) return;
 
-  // show the QR for preview
+
   qrImage.src = qrAPI;
 
-  // PREVIEW: keep the href so clicking directly still opens the image in a new tab
   downloadBtn.setAttribute('href', qrAPI);
   downloadBtn.setAttribute('target', '_blank');
   downloadBtn.setAttribute('rel', 'noopener');
 
-  // When user clicks Download, fetch the image blob and trigger client-side download
   downloadBtn.addEventListener('click', async function (e) {
-    e.preventDefault(); // prevent default navigation
-
-    // small UI feedback: disable while fetching
+    e.preventDefault(); 
     downloadBtn.classList.add('loading');
     downloadBtn.setAttribute('aria-disabled', 'true');
 
@@ -319,7 +285,6 @@
       const filename = 'Ashraf_QR.png';
       const objectUrl = URL.createObjectURL(blob);
 
-      // Create a temporary anchor to trigger download (works across browsers)
       const temp = document.createElement('a');
       temp.href = objectUrl;
       temp.download = filename;
@@ -327,12 +292,10 @@
       temp.click();
       temp.remove();
 
-      // release memory
       setTimeout(() => URL.revokeObjectURL(objectUrl), 1500);
 
     } catch (err) {
       console.error('QR download failed', err);
-      // Fallback: open in new tab for user to manually save
       window.open(qrAPI, '_blank', 'noopener');
     } finally {
       downloadBtn.classList.remove('loading');
@@ -340,7 +303,6 @@
     }
   });
 
-  // Optional: share button (as you already had) - keep as-is
   shareBtn?.addEventListener('click', async () => {
     try {
       const resp = await fetch(qrAPI, { mode: 'cors' });
