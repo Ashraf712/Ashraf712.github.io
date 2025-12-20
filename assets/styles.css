@@ -147,6 +147,7 @@ main{margin-inline-start:280px;}
     padding-left: 16px;
     border-left: 3px solid #0ea5e9;   }
   #experience .timeline-item h3 {
+        margin-left: 10px;
     margin: 0 0 4px;
     line-height: 1.3;
     font-size: 1.05rem;
