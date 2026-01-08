@@ -1686,12 +1686,14 @@
 
     <footer class="site-footer">
         <div class="container">
-            <p>© 2025 Ashraf. All rights reserved.</p>
+            <p>© <span id="year"></span> Ashraf. All rights reserved.</p>
+            <!--<p>© 2025 Ashraf. All rights reserved.</p>-->
             <a href="#hero" class="back-to-top" aria-label="Back to top">↑</a>
         </div>
-
     </footer>
-
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
     <script src="assets/script.js" defer></script>
 </body>
 
