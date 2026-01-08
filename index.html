@@ -2,1495 +2,1697 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#0b1220" />
-  <title>Ashraf's Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="assets/styles.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b1220" />
+    <title>Ashraf's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css" />
 </head>
 
 <body>
-  <header class="site-header" id="top">
-    <a class="brand" href="#hero">Ashraf Ali Shaik<span class="dot">.</span></a>
-    <nav class="nav" id="site-nav" aria-label="Primary">
-      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav"
-        aria-label="Toggle navigation">☰</button>
-      <ul id="nav-list">
-        <li><a href="#about" data-en="About" data-ar="حول">About</a></li>
-        <li><a href="#skills" data-en="Skills" data-ar="المهارات">Skills</a></li>
-        <li><a href="#experience" data-en="Experience" data-ar="الخبرة">Experience</a></li>
-        <li><a href="#projects" data-en="Projects" data-ar="المشاريع">Projects</a></li>
-        <li><a href="#resume" data-en="Resume" data-ar="السيرة الذاتية">Resume</a></li>
-        <li><a href="#documents" data-en="Docs / Certifications" data-ar="المستندات">Docs / Certifications</a></li>
-        <li><a href="#contact" data-en="Contact" data-ar="تواصل">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="actions">
-<div class="share-wrap" id="shareWrap">
-      <a href="assets/Ashraf_CV.pdf" download="Ashraf_Ali_Shaik_Senior_Net_Developer_CV.pdf" class="btn small"
-        id="cvBtn">  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  style="vertical-align:middle; margin-right:6px;">
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                <polyline points="7 10 12 15 17 10" />
-                <line x1="12" y1="15" x2="12" y2="3" />
-              </svg>
-               CV</a>
-</div>
-        <!-- Share button (place inside .actions) -->
-<div class="share-wrap" id="shareWrap">
-  <a id="shareBtn" class="btn small" aria-haspopup="menu" aria-expanded="false" title="Share portfolio">
-    Share
-  </a>
+    <header class="site-header" id="top">
+        <a class="brand" href="#hero">Ashraf Ali Shaik<span class="dot">.</span></a>
+        <nav class="nav" id="site-nav" aria-label="Primary">
+            <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav"
+                    aria-label="Toggle navigation">
+                ☰
+            </button>
+            <ul id="nav-list">
+                <li><a href="#about" data-en="About" data-ar="حول">About</a></li>
+                <li><a href="#skills" data-en="Skills" data-ar="المهارات">Skills</a></li>
+                <li><a href="#experience" data-en="Experience" data-ar="الخبرة">Experience</a></li>
+                <li><a href="#projects" data-en="Projects" data-ar="المشاريع">Projects</a></li>
+                <li><a href="#resume" data-en="Resume" data-ar="السيرة الذاتية">Resume</a></li>
+                <li><a href="#documents" data-en="Docs / Certifications" data-ar="المستندات">Docs / Certifications</a></li>
+                <li><a href="#contact" data-en="Contact" data-ar="تواصل">Contact</a></li>
+                <li><a href="#LinkedinPost" data-en="LinkedIn Post">LinkedIn Posts</a></li>
+            </ul>
+        </nav>
+        <div class="actions">
+            <div class="share-wrap" id="shareWrap">
+                <a href="assets/Ashraf_CV.pdf" download="Ashraf_Ali_Shaik_Senior_Net_Developer_CV.pdf" class="btn small"
+                   id="cvBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                         style="vertical-align:middle; margin-right:6px;">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                        <polyline points="7 10 12 15 17 10" />
+                        <line x1="12" y1="15" x2="12" y2="3" />
+                    </svg>
+                    CV
+                </a>
+            </div>
+            <!-- Share button (place inside .actions) -->
+            <div class="share-wrap" id="shareWrap">
+                <a id="shareBtn" class="btn small" aria-haspopup="menu" aria-expanded="false" title="Share portfolio">
+                    Share
+                </a>
 
-  <!-- fallback menu with direct links (hidden by default) -->
-  <div id="shareMenu" class="share-menu" role="menu" aria-hidden="true">
-    <a id="shareTwitter" role="menuitem" href="#" target="_blank" rel="noopener">Share on Twitter</a>
-    <a id="shareLinkedIn" role="menuitem" href="#" target="_blank" rel="noopener">Share on LinkedIn</a>
-    <a id="shareWhatsApp" role="menuitem" href="#" target="_blank" rel="noopener">Share on WhatsApp</a>
-    <a id="shareEmail" role="menuitem" href="#" target="_blank" rel="noopener">Share by Email</a>
-    <button id="copyLink" class="pill" type="button">Copy link</button>
-  </div>
-</div>
-
-<!-- small toast for copy feedback -->
-<div id="shareToast" class="share-toast" aria-hidden="true">Link copied to clipboard</div>
-
-    </div>
-  </header>
-
-  <main>
-    <section id="hero" class="section hero reveal">
-      <div class="container hero-grid">
-        <div class="col-6 hero-left">
-         <h1 class="hero-title">Ashraf Ali Shaik</h1>
-          <!-- <p class="hero-sub"><strong>Senior</strong> Technical Lead / Technical Project Manager / .NET Developer <br>• 11+ years, Kuwait</p> -->
-          <p class="hero-sub role-line">
-            <strong><span class="neutral">Senior</span> Technical Lead
-              <span class="neutral">/</span>
-              Technical Project Manager
-              <span class="neutral">/</span>
-              .NET Developer
-              <br>11+ years, Kuwait
-              <br><span class="neutral">Managed, led, and developed</span> <strong><span>27+</span></strong><span
-                class="neutral"> applications</span></strong>
-          </p>
-          <div class="text-center" style="text-align: center;">
-            <p class="hero-typed" aria-live="polite">I welcome you to my Portfolio.....</p>
-          </div>
-
-          <div class="hero-ctas">
-
-            <!-- <a class="btn" id="dlBtn" href="assets/Ashraf_CV.pdf" download="Ashraf_Ali_Shaik_Senior_Net_CV.pdf">
-              Download CV
-            </a> -->
-
-            <a class="btn" id="dlBtn" href="assets/Ashraf_CV.pdf" download="Ashraf_Ali_Shaik_Senior_Net_CV.pdf">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  style="vertical-align:middle; margin-right:6px;">
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                <polyline points="7 10 12 15 17 10" />
-                <line x1="12" y1="15" x2="12" y2="3" />
-              </svg>
-              CV
-            </a>
-
-
-            <a class="btn" href="#contact" id="contactBtn">Contact Me</a>
-            <a class="linkedin-link" href="https://www.linkedin.com/in/ashraf-ali-b43aa321a" target="_blank"
-              rel="noopener" aria-label="LinkedIn">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor"
-                class="mercado-match" width="24" height="24" focusable="false">
-                <path
-                  d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z">
-                </path>
-              </svg>
-            </a>
-              <a id="shareMainBtn" class="btn small ghost" role="button" title="Share portfolio">
-             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-     style="vertical-align:middle; margin-right:6px;">
-  <circle cx="18" cy="5" r="3" />
-  <circle cx="6" cy="12" r="3" />
-  <circle cx="18" cy="19" r="3" />
-  <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
-  <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
-</svg>
-
-                Share
-              </a>
-          </div>  
-   
-      <center>
-       <section id="qr" class="reveal">
-                <div class="container text-center"> 
-                  <div class="qr-box">
-                    <img id="qrImage" src="" alt="Portfolio QR Code" width="180" height="180">
-                  </div>
-                  <div class="qr-actions">
-                    <!-- <a class="btn" id="openSiteBtn" href="https://ashraf712.github.io/" target="_blank" rel="noopener">
-                      Open Website
-                    </a> -->
-                    <a class="btn ghost" id="downloadQR" download="Ashraf_QR.png">  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  style="vertical-align:middle; margin-right:6px;">
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                <polyline points="7 10 12 15 17 10" />
-                <line x1="12" y1="15" x2="12" y2="3" />
-              </svg> QR</a>
-                    <a class="btn ghost" id="shareQR"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-     style="vertical-align:middle; margin-right:6px;">
-  <circle cx="18" cy="5" r="3" />
-  <circle cx="6" cy="12" r="3" />
-  <circle cx="18" cy="19" r="3" />
-  <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
-  <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
-</svg>
- QR</a>
-                  </div>
+                <!-- fallback menu with direct links (hidden by default) -->
+                <div id="shareMenu" class="share-menu" role="menu" aria-hidden="true">
+                    <a id="shareTwitter" role="menuitem" href="#" target="_blank" rel="noopener">Share on Twitter</a>
+                    <a id="shareLinkedIn" role="menuitem" href="#" target="_blank" rel="noopener">Share on LinkedIn</a>
+                    <a id="shareWhatsApp" role="menuitem" href="#" target="_blank" rel="noopener">Share on WhatsApp</a>
+                    <a id="shareEmail" role="menuitem" href="#" target="_blank" rel="noopener">Share by Email</a>
+                    <button id="copyLink" class="pill" type="button">Copy link</button>
                 </div>
-          </section>
-          </center> 
+            </div>
 
-          
-        </div>
-
-
-
-
-
-
-        
-        
-        <div class="col-6 hero-right">
-          <img src="assets/Ashraf.jpg" onerror="this.src='assets/Ashraf.jpg';" alt="Profile photo"
-            class="profile-img" />
-        </div>
-      </div>
-      <a class="scroll-down" href="#about" aria-label="Scroll to About">⌄</a>
-    </section>
-
-    <section id="about" class="section reveal">
-      <div class="container">
-
-        <div class="about-section">
-          <h2>About</h2>        
-          <p>
-            <strong style="color:red;">Senior Technical Lead / Technical Project Manager / .NET Developer with 11+ years
-              of end-to-end delivery</strong>
-            across analysis, design, development, testing, deployment, and maintenance of enterprise applications.
-            Specialized in building
-            <strong>web, desktop, and service-based solutions</strong> using C#, ASP.NET (Core/MVC/WebForms), Windows
-            Services, REST/SOAP APIs, and advanced database design
-            on SQL Server, MySQL, and Oracle.
-            <strong>Project/People leadership:</strong> led cross-functional teams (3–8 engineers), owned roadmaps and
-            sprint planning, managed scope/risk & stakeholder alignment,
-            enforced code quality (reviews, standards), and drove CI/CD, release readiness, and post-release
-            incident/RCA processes.
-          </p>
-
-          <ul class="ticks">
-            <li><strong>Programming &amp; Frameworks:</strong> C#.NET, VB.NET, VB6, ASP.NET, OOPS concepts, Windows
-              applications, Windows Services, Class Libraries, Web Applications, Web Services, REST APIs, and Crystal
-              Reports</li>
-            <li><strong>Database Engineering:</strong> Database design, normalization, stored procedures, functions,
-              triggers, views; skilled in data migration, system integrations, and performance optimization</li>
-            <li><strong>Infrastructure &amp; Deployment:</strong> IIS and Windows Server configuration, background jobs,
-              long-running services, production deployment, troubleshooting, and optimization</li>
-            <li><strong>Payments &amp; FinTech:</strong> KNET, MyFatoorah, CyberSource, Tap, PayPal, Stripe, UPayments,
-              UPI integrations</li>
-            <li><strong>Devices &amp; ID Stacks:</strong> RFID, ANPR, OCR, Mobile ID, Sahel, GoSign, CCTV/RTSP
-              technologies</li>
-            <li><strong>Software Engineering Practices:</strong> Full SDLC expertise — business analysis, requirement
-              gathering, system analysis, solution design, coding, testing, deployment, and data migration</li>
-            <li><strong>Collaboration &amp; Delivery:</strong> Effective working independently to deliver before
-              deadlines and collaboratively within teams; adaptable and reliable under pressure</li>
-          </ul>
-
-          <!-- <h3>Key Strengths</h3>
-          <ul class="ticks">
-            <li>11+ years across client/server and web-based applications</li>
-            <li>Strong background in object-oriented programming, scalable system architecture, and real-world problem
-              solving</li>
-            <li>Blend of technical depth and business understanding, ensuring solutions meet both performance and
-              operational requirements</li>
-            <li>Recognized for reliability, adaptability, and ability to deliver under tight deadlines</li>
-          </ul> -->
-          <h3>Key Strengths</h3>
-          <ul class="ticks">
-            <li>11+ years across client/server and web-based applications</li>
-            <li>Strong background in object-oriented programming, scalable system architecture, and real-world problem
-              solving</li>
-            <li>Blend of technical depth and business understanding, ensuring solutions meet both performance and
-              operational requirements</li>
-            <li>Recognized for reliability, adaptability, and ability to deliver under tight deadlines</li>
-            <li>Led cross-functional teams (3–8 engineers) from discovery to production</li>
-            <li>Project planning & delivery: roadmaps, milestones, dependencies, critical path</li>
-            <li>Agile/Scrum: sprint planning, backlog grooming, reviews/retros, burndown tracking</li>
-            <li>Stakeholder management: clear status, demos, expectation & scope alignment</li>
-            <li>Mentoring & hiring: onboarding, code reviews, pair programming, growth plans</li>
-            <li>Quality & DevOps: CI/CD gates, test strategy, release readiness, rollout/rollback</li>
-            <li>Risk & incident management: SLAs, on-call coordination, RCA & postmortems</li>
-          </ul>
+            <!-- small toast for copy feedback -->
+            <div id="shareToast" class="share-toast" aria-hidden="true">Link copied to clipboard</div>
 
         </div>
+    </header>
 
-        <aside class="card stat-card">
-          <div><span>Location</span><strong>Farwaniya, Kuwait</strong></div>
-          <div><span>Experience</span><strong>11+ years</strong></div>
-          <div><span>Email</span><strong><a style="color:#0ea5e9;"
-                href="mailto:ashrafaliannu@gmail.com">ashrafaliannu@gmail.com</a></strong></div>
-          <div><span>Phone / WhatsApp</span><strong><a style="color:#0ea5e9;"
-                href="tel:+965-50325941">+965-50325941</a></strong></div>
-        </aside>
-      </div>
-    </section>
-    </div>
+    <main>
+        <section id="hero" class="section hero reveal">
+            <div class="container hero-grid">
+                <div class="col-6 hero-left">
+                    <h1 class="hero-title">Ashraf Ali Shaik</h1>
+                    <!-- <p class="hero-sub"><strong>Senior</strong> Technical Lead / Technical Project Manager / .NET Developer <br>• 11+ years, Kuwait</p> -->
+                    <p class="hero-sub role-line">
+                        <strong>
+                            <span class="neutral">Senior</span> Technical Lead
+                            <span class="neutral">/</span>
+                            Technical Project Manager
+                            <span class="neutral">/</span>
+                            .NET Developer
+                            <br>11+ years, Kuwait
+                            <br><span class="neutral">Managed, led, and developed</span> <strong><span>27+</span></strong><span class="neutral"> applications</span>
+                        </strong>
+                    </p>
+                    <div class="text-center" style="text-align: center;">
+                        <p class="hero-typed" aria-live="polite">I welcome you to my Portfolio.....</p>
+                    </div>
 
-    <section id="skills" class="section alt reveal">
-      <div class="container">
-        <h2>Skills</h2>
-        <div class="skills-grid">
+                    <div class="hero-ctas">
 
-          <div class="card">
-            <h3>Programming Languages</h3>
-            <div class="tags">
-              <span>C#</span><span>Xamarin C#</span><span>VB.NET</span><span>VB6</span><span>VBA</span>
+                        <!-- <a class="btn" id="dlBtn" href="assets/Ashraf_CV.pdf" download="Ashraf_Ali_Shaik_Senior_Net_CV.pdf">
+                          Download CV
+                        </a> -->
+
+                        <a class="btn" id="dlBtn" href="assets/Ashraf_CV.pdf" download="Ashraf_Ali_Shaik_Senior_Net_CV.pdf">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                 style="vertical-align:middle; margin-right:6px;">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                <polyline points="7 10 12 15 17 10" />
+                                <line x1="12" y1="15" x2="12" y2="3" />
+                            </svg>
+                            CV
+                        </a>
+
+
+                        <a class="btn" href="#contact" id="contactBtn">Contact Me</a>
+                        <a class="linkedin-link" href="https://www.linkedin.com/in/ashraf-ali-b43aa321a" target="_blank"
+                           rel="noopener" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor"
+                                 class="mercado-match" width="24" height="24" focusable="false">
+                                <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a id="shareMainBtn" class="btn small ghost" role="button" title="Share portfolio">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                 style="vertical-align:middle; margin-right:6px;">
+                                <circle cx="18" cy="5" r="3" />
+                                <circle cx="6" cy="12" r="3" />
+                                <circle cx="18" cy="19" r="3" />
+                                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
+                                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
+                            </svg>
+
+                            Share
+                        </a>
+                    </div>
+
+                    <center>
+                        <section id="qr" class="reveal">
+                            <div class="container text-center">
+                                <div class="qr-box">
+                                    <img id="qrImage" src="" alt="Portfolio QR Code" width="180" height="180">
+                                </div>
+                                <div class="qr-actions">
+                                    <!-- <a class="btn" id="openSiteBtn" href="https://ashraf712.github.io/" target="_blank" rel="noopener">
+                                      Open Website
+                                    </a> -->
+                                    <a class="btn ghost" id="downloadQR" download="Ashraf_QR.png">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                             style="vertical-align:middle; margin-right:6px;">
+                                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                            <polyline points="7 10 12 15 17 10" />
+                                            <line x1="12" y1="15" x2="12" y2="3" />
+                                        </svg> QR
+                                    </a>
+                                    <a class="btn ghost" id="shareQR">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                             style="vertical-align:middle; margin-right:6px;">
+                                            <circle cx="18" cy="5" r="3" />
+                                            <circle cx="6" cy="12" r="3" />
+                                            <circle cx="18" cy="19" r="3" />
+                                            <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
+                                            <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
+                                        </svg>
+                                        QR
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                    </center>
+
+
+                </div>
+
+
+
+
+
+
+
+
+                <div class="col-6 hero-right">
+                    <img src="assets/Ashraf.jpg" onerror="this.src='assets/Ashraf.jpg';" alt="Profile photo"
+                         class="profile-img" />
+                </div>
             </div>
-          </div>
+            <a class="scroll-down" href="#about" aria-label="Scroll to About">⌄</a>
+        </section>
 
-          <div class="card">
-            <h3>Frontend</h3>
-            <div class="tags">
-              <span>HTML</span><span>CSS</span><span>Bootstrap 4</span><span>Bootstrap 5</span>
-              <span>Razor Views</span><span>Razor Pages</span>
-              <span>Blazor Server</span><span>Blazor WebAssembly</span>
-              <span>Tag Helpers</span><span>Partial Views</span>
-              <span>Unobtrusive Validation</span><span>SignalR Client</span>
-              <span>JavaScript</span><span>jQuery</span> <span>React.js</span> <span>Angular</span><span>Kendo UI</span><span>Telerik UI</span>
+        <section id="about" class="section reveal">
+            <div class="container">
+
+                <div class="about-section">
+                    <h2>About</h2>
+                    <p>
+                        <strong style="color:red;">
+                            Senior Technical Lead / Technical Project Manager / .NET Developer with 11+ years
+                            of end-to-end delivery
+                        </strong>
+                        across analysis, design, development, testing, deployment, and maintenance of enterprise applications.
+                        Specialized in building
+                        <strong>web, desktop, and service-based solutions</strong> using C#, ASP.NET (Core/MVC/WebForms), Windows
+                        Services, REST/SOAP APIs, and advanced database design
+                        on SQL Server, MySQL, and Oracle.
+                        <strong>Project/People leadership:</strong> led cross-functional teams (3–8 engineers), owned roadmaps and
+                        sprint planning, managed scope/risk & stakeholder alignment,
+                        enforced code quality (reviews, standards), and drove CI/CD, release readiness, and post-release
+                        incident/RCA processes.
+                    </p>
+
+                    <ul class="ticks">
+                        <li>
+                            <strong>Programming &amp; Frameworks:</strong> C#.NET, VB.NET, VB6, ASP.NET, OOPS concepts, Windows
+                            applications, Windows Services, Class Libraries, Web Applications, Web Services, REST APIs, and Crystal
+                            Reports
+                        </li>
+                        <li>
+                            <strong>Database Engineering:</strong> Database design, normalization, stored procedures, functions,
+                            triggers, views; skilled in data migration, system integrations, and performance optimization
+                        </li>
+                        <li>
+                            <strong>Infrastructure &amp; Deployment:</strong> IIS and Windows Server configuration, background jobs,
+                            long-running services, production deployment, troubleshooting, and optimization
+                        </li>
+                        <li>
+                            <strong>Payments &amp; FinTech:</strong> KNET, MyFatoorah, CyberSource, Tap, PayPal, Stripe, UPayments,
+                            UPI integrations
+                        </li>
+                        <li>
+                            <strong>Devices &amp; ID Stacks:</strong> RFID, ANPR, OCR, Mobile ID, Sahel, GoSign, CCTV/RTSP
+                            technologies
+                        </li>
+                        <li>
+                            <strong>Software Engineering Practices:</strong> Full SDLC expertise — business analysis, requirement
+                            gathering, system analysis, solution design, coding, testing, deployment, and data migration
+                        </li>
+                        <li>
+                            <strong>Collaboration &amp; Delivery:</strong> Effective working independently to deliver before
+                            deadlines and collaboratively within teams; adaptable and reliable under pressure
+                        </li>
+                    </ul>
+
+                    <!-- <h3>Key Strengths</h3>
+                    <ul class="ticks">
+                      <li>11+ years across client/server and web-based applications</li>
+                      <li>Strong background in object-oriented programming, scalable system architecture, and real-world problem
+                        solving</li>
+                      <li>Blend of technical depth and business understanding, ensuring solutions meet both performance and
+                        operational requirements</li>
+                      <li>Recognized for reliability, adaptability, and ability to deliver under tight deadlines</li>
+                    </ul> -->
+                    <h3>Key Strengths</h3>
+                    <ul class="ticks">
+                        <li>11+ years across client/server and web-based applications</li>
+                        <li>
+                            Strong background in object-oriented programming, scalable system architecture, and real-world problem
+                            solving
+                        </li>
+                        <li>
+                            Blend of technical depth and business understanding, ensuring solutions meet both performance and
+                            operational requirements
+                        </li>
+                        <li>Recognized for reliability, adaptability, and ability to deliver under tight deadlines</li>
+                        <li>Led cross-functional teams (3–8 engineers) from discovery to production</li>
+                        <li>Project planning & delivery: roadmaps, milestones, dependencies, critical path</li>
+                        <li>Agile/Scrum: sprint planning, backlog grooming, reviews/retros, burndown tracking</li>
+                        <li>Stakeholder management: clear status, demos, expectation & scope alignment</li>
+                        <li>Mentoring & hiring: onboarding, code reviews, pair programming, growth plans</li>
+                        <li>Quality & DevOps: CI/CD gates, test strategy, release readiness, rollout/rollback</li>
+                        <li>Risk & incident management: SLAs, on-call coordination, RCA & postmortems</li>
+                    </ul>
+
+                </div>
+
+                <aside class="card stat-card">
+                    <div><span>Location</span><strong>Farwaniya, Kuwait</strong></div>
+                    <div><span>Experience</span><strong>11+ years</strong></div>
+                    <div>
+                        <span>Email</span><strong>
+                            <a style="color:#0ea5e9;"
+                               href="mailto:ashrafaliannu@gmail.com">ashrafaliannu@gmail.com</a>
+                        </strong>
+                    </div>
+                    <div>
+                        <span>Phone / WhatsApp</span><strong>
+                            <a style="color:#0ea5e9;"
+                               href="tel:+965-50325941">+965-50325941</a>
+                        </strong>
+                    </div>
+                </aside>
             </div>
-          </div>
-
-          <div class="card">
-            <h3>Back-end Frameworks &amp; Runtimes</h3>
-            <div class="tags">
-              <span>ASP.NET Web Forms</span><span>ASP.NET MVC</span>
-              <span>ASP.NET Core 6</span><span>ASP.NET Core 8</span><span>ASP.NET Core 9</span>
-              <span>.NET Core 6</span><span>.NET 8</span><span>.NET 9</span>
-              <span>Minimal APIs</span><span>Web API</span><span>SignalR</span><span>gRPC</span>
-              <span>Worker Service</span><span>Middleware</span><span>Dependency Injection</span>
-              <span>Configuration</span><span>Logging</span><span>Kestrel</span><span>IIS</span>
-            </div>
-          </div>
-
-
-          <div class="card">
-            <h3>Databases</h3>
-            <div class="tags">
-              <span>MS SQL Server (2014/ 2016/ 2019/ 2022)</span><span>MySQL</span><span>Oracle 11g</span><span>Oracle
-                19c</span>
-              <span>SSMS</span><span>SQL Profiler / XEvents</span><span>SQL Server Agent</span>
-              <span>Oracle SQL Developer</span><span>Toad</span><span>MySQL Workbench</span>
-              <span>Stored Procedures</span><span>Views &amp; Functions</span><span>Triggers</span><span>Indexing &amp;
-                Tuning</span>
-            </div>
-          </div>
-
-          <div class="card">
-            <h3>ORM &amp; Data Access</h3>
-            <div class="tags">
-              <span>Entity Framework 6</span><span>EF
-                Core</span><span>LINQ</span><span>ADO.NET</span><span>Dapper</span>
-              <span>Migrations</span><span>Fluent API</span><span>Change Tracking / NoTracking</span>
-              <span>Transactions</span><span>Unit of Work</span><span>RowVersion Concurrency</span>
-              <span>Stored Proc Mapping</span><span>Raw SQL</span><span>Connection Pooling</span>
-            </div>
-          </div>
-
-          <div class="card">
-            <h3>API Development</h3>
-            <div class="tags">
-              <span>REST API</span><span>Web API</span><span>SOAP</span><span>Microservices</span>
-
-              <span>ASP.NET Core Web API</span><span>Minimal APIs</span><span>Web service</span>
-              <span>GraphQL (Hot Chocolate)</span><span>OData</span>
-            </div>
-          </div>
-
-
-          <div class="card">
-            <h3>Auth & Security</h3>
-            <div class="tags">
-              <span>JWT</span><span>OAuth2/OIDC</span><span>Cookies</span><span>Azure AD</span>
-              <span>RBAC/Scopes</span><span>CORS</span><span>Security Headers</span><span>Input Validation</span>
-              <span>Rate Limiting</span><span>Throttling</span><span>API Keys</span>
-            </div>
-          </div>
-
-          <div class="card">
-            <h3>Windows Services &amp; Libraries</h3>
-            <div class="tags">
-              <span>Windows Services</span><span>.NET Worker Service</span><span>IHostedService</span>
-              <span>BackgroundService</span>
-              <span>WCF</span><span>NetTcpBinding</span><span>Net Named Pipe Binding</span>
-              <span>Named Pipes</span><span>Quartz.NET</span><span>EventLog</span><span>Windows Registry</span>
-              <span>Class Library (.NET)</span><span>NuGet</span>
-            </div>
-          </div>
-
-
-          <div class="card">
-            <h3>Payment Gateway Integrations</h3>
-            <div class="tags">
-              <span>CyberSource</span><span>KNET</span><span>MyFatoorah</span>
-              <span>Google Pay</span><span>Apple Pay</span><span>Visa</span><span>Mastercard</span>
-              <span>Tasdeed Ministry PG</span>
-              <span>Stripe</span><span>PayPal</span><span>PhonePe</span><span>BharatPe</span>
-              <span>Paytm</span><span>UPI Payments</span><span>UPayments</span><span>Tap Payments</span>
-            </div>
-          </div>
-
-          <div class="card">
-            <h3>Testing &amp; Debugging</h3>
-            <div class="tags">
-              <span>Postman</span><span>Swagger /
-                OpenAPI</span><span>Fiddler</span><span>dotTrace</span><span>dotMemory</span>
-              <span>Application Insights</span><span>Serilog</span> <span>xUnit</span><span>NUnit</span>
-            </div>
-          </div>
-
-
-
-          <div class="card">
-            <h3>Browser Debugging Tools</h3>
-            <div class="tags">
-              <span>DevTools</span><span>Console</span><span>Sources</span><span>Network</span>
-              <span>Performance</span><span>Memory</span><span>Application</span><span>Security</span>
-              <span>Lighthouse</span><span>Coverage</span><span>Mobile Emulation</span><span>Throttling</span>
-              <span>WebSocket Inspector</span><span>Local Overrides</span><span>Snippets</span>
-            </div>
-
-          </div>
-
-          <div class="card">
-            <h3>Version Control</h3>
-            <div class="tags">
-              <span>Git</span><span>GitHub</span><span>GitLab</span><span>TortoiseSVN</span> <span>SVN</span><span>Teams
-                Foundation Server</span>
-            </div>
-          </div>
-
+        </section>
         </div>
-      </div>
-    </section>
 
-    <section id="experience" class="section alt reveal">
-      <div class="container">
-        <h2>Experience</h2>
-        <div class="timeline">
+        <section id="skills" class="section alt reveal">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+
+                    <div class="card">
+                        <h3>Programming Languages</h3>
+                        <div class="tags">
+                            <span>C#</span><span>Xamarin C#</span><span>VB.NET</span><span>VB6</span><span>VBA</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3>Frontend</h3>
+                        <div class="tags">
+                            <span>HTML</span><span>CSS</span><span>Bootstrap 4</span><span>Bootstrap 5</span>
+                            <span>Razor Views</span><span>Razor Pages</span>
+                            <span>Blazor Server</span><span>Blazor WebAssembly</span>
+                            <span>Tag Helpers</span><span>Partial Views</span>
+                            <span>Unobtrusive Validation</span><span>SignalR Client</span>
+                            <span>JavaScript</span><span>jQuery</span> <span>React.js</span> <span>Angular</span><span>Kendo UI</span><span>Telerik UI</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3>Back-end Frameworks &amp; Runtimes</h3>
+                        <div class="tags">
+                            <span>ASP.NET Web Forms</span><span>ASP.NET MVC</span>
+                            <span>ASP.NET Core 6</span><span>ASP.NET Core 8</span><span>ASP.NET Core 9</span>
+                            <span>.NET Core 6</span><span>.NET 8</span><span>.NET 9</span>
+                            <span>Minimal APIs</span><span>Web API</span><span>SignalR</span><span>gRPC</span>
+                            <span>Worker Service</span><span>Middleware</span><span>Dependency Injection</span>
+                            <span>Configuration</span><span>Logging</span><span>Kestrel</span><span>IIS</span>
+                        </div>
+                    </div>
 
 
-          <article class="timeline-item">
-            <h3>
-              <span class="line">Senior .NET Developer</span>
-              <span class="line">DPS (Outsource)</span>
-              <span class="line">Ministry of Finance (MOF) </span>
-              <span class="line">Project:
-                <li>Tax Certification System</li>
-              </span>
-            </h3>
-            <div class="meta">Kuwait | 2023 – Present</div>
+                    <div class="card">
+                        <h3>Databases</h3>
+                        <div class="tags">
+                            <span>MS SQL Server (2014/ 2016/ 2019/ 2022)</span><span>MySQL</span><span>Oracle 11g</span><span>
+                                Oracle
+                                19c
+                            </span>
+                            <span>SSMS</span><span>SQL Profiler / XEvents</span><span>SQL Server Agent</span>
+                            <span>Oracle SQL Developer</span><span>Toad</span><span>MySQL Workbench</span>
+                            <span>Stored Procedures</span><span>Views &amp; Functions</span><span>Triggers</span><span>
+                                Indexing &amp;
+                                Tuning
+                            </span>
+                        </div>
+                    </div>
 
-          </article>
+                    <div class="card">
+                        <h3>ORM &amp; Data Access</h3>
+                        <div class="tags">
+                            <span>Entity Framework 6</span><span>
+                                EF
+                                Core
+                            </span><span>LINQ</span><span>ADO.NET</span><span>Dapper</span>
+                            <span>Migrations</span><span>Fluent API</span><span>Change Tracking / NoTracking</span>
+                            <span>Transactions</span><span>Unit of Work</span><span>RowVersion Concurrency</span>
+                            <span>Stored Proc Mapping</span><span>Raw SQL</span><span>Connection Pooling</span>
+                        </div>
+                    </div>
 
-          <article class="timeline-item">
-            <h3>
-              <span class="line">Senior .NET Developer</span>
-              <span class="line">DPS (Outsource)</span>
-              <span class="line">Kuwait Fund for Arab Economic Development</span>
-              <span class="line">Project:
-                <li>Disbursement – Loans, Grants & Claims Management System</li>
-              </span>
-            </h3>
-            <div class="meta">Kuwait | 2022 – Present</div>
+                    <div class="card">
+                        <h3>API Development</h3>
+                        <div class="tags">
+                            <span>REST API</span><span>Web API</span><span>SOAP</span><span>Microservices</span>
 
-          </article>
+                            <span>ASP.NET Core Web API</span><span>Minimal APIs</span><span>Web service</span>
+                            <span>GraphQL (Hot Chocolate)</span><span>OData</span>
+                        </div>
+                    </div>
 
-          <article class="timeline-item">
-            <h3>
-              <span class="line">Senior .NET Developer</span>
-              <span class="line">DPS (Outsource)</span>
-              <span class="line">Warba Insurance & Reinsurance</span>
-              <span class="line">Projects:
-                <li>Border Motor & TPL insurance</li>
-                <li>Motor Insurance Policy Purchase Web Portal</li>
-                <li>Motor Insurance Policy Purchase Mobile Apps APIs </li>
-                <li>All Payment Integrations : CyberSource Mstr/Visa Cards, KNET, Verifone hardwares</li>
-              </span>
-            </h3>
-            <div class="meta">Kuwait | 2023 – Present</div>
-          </article>
 
-          <article class="timeline-item">
-            <h3>
-              <span class="line">Senior .NET Developer</span>
-              <span class="line">DPS (Outsource)</span>
-              <span class="line">Capital Market Authority (CMA)</span>
-              <span class="line">Project:
-                <li>Ministry Budgeting System</li>
-              </span>
-            </h3>
-            <div class="meta">Kuwait | 2022 – Present</div>
+                    <div class="card">
+                        <h3>Auth & Security</h3>
+                        <div class="tags">
+                            <span>JWT</span><span>OAuth2/OIDC</span><span>Cookies</span><span>Azure AD</span>
+                            <span>RBAC/Scopes</span><span>CORS</span><span>Security Headers</span><span>Input Validation</span>
+                            <span>Rate Limiting</span><span>Throttling</span><span>API Keys</span>
+                        </div>
+                    </div>
 
-          </article>
-          <article class="timeline-item">
-            <h3>
-              <span class="line">Senior .NET Developer</span>
-              <span class="line">Digital Processing System (DPS)</span>
-            </h3>
-            <div class="meta">Kuwait | 2022 – Present</div>
+                    <div class="card">
+                        <h3>Windows Services &amp; Libraries</h3>
+                        <div class="tags">
+                            <span>Windows Services</span><span>.NET Worker Service</span><span>IHostedService</span>
+                            <span>BackgroundService</span>
+                            <span>WCF</span><span>NetTcpBinding</span><span>Net Named Pipe Binding</span>
+                            <span>Named Pipes</span><span>Quartz.NET</span><span>EventLog</span><span>Windows Registry</span>
+                            <span>Class Library (.NET)</span><span>NuGet</span>
+                        </div>
+                    </div>
 
-          </article>
 
-          <article class="timeline-item">
-            <h3>
-              <span class="line">Senior .NET Developer</span>
-              <span class="line">Armada Retail Concept</span>
-            </h3>
-            <div class="meta">Kuwait | 2014 – 2022</div>
-          </article>
+                    <div class="card">
+                        <h3>Payment Gateway Integrations</h3>
+                        <div class="tags">
+                            <span>CyberSource</span><span>KNET</span><span>MyFatoorah</span>
+                            <span>Google Pay</span><span>Apple Pay</span><span>Visa</span><span>Mastercard</span>
+                            <span>Tasdeed Ministry PG</span>
+                            <span>Stripe</span><span>PayPal</span><span>PhonePe</span><span>BharatPe</span>
+                            <span>Paytm</span><span>UPI Payments</span><span>UPayments</span><span>Tap Payments</span>
+                        </div>
+                    </div>
 
-          <article class="timeline-item">
-            <h3>
-              <span class="line">.NET Developer</span>
-              <span class="line">Bobyan Delivery International</span>
-            </h3>
-            <div class="meta">Kuwait | 2016 – 2020</div>
-          </article>
+                    <div class="card">
+                        <h3>Testing &amp; Debugging</h3>
+                        <div class="tags">
+                            <span>Postman</span><span>
+                                Swagger /
+                                OpenAPI
+                            </span><span>Fiddler</span><span>dotTrace</span><span>dotMemory</span>
+                            <span>Application Insights</span><span>Serilog</span> <span>xUnit</span><span>NUnit</span>
+                        </div>
+                    </div>
 
-          <article class="timeline-item">
-            <h3>
-              <span class="line">.NET Developer</span>
-              <span class="line">Freelance</span>
-              <span class="line">Contract / Project / Task / Problem / Architecture</span>
-            </h3>
-            <div class="meta">Kuwait | 2013 – 2022</div>
-          </article>
 
+
+                    <div class="card">
+                        <h3>Browser Debugging Tools</h3>
+                        <div class="tags">
+                            <span>DevTools</span><span>Console</span><span>Sources</span><span>Network</span>
+                            <span>Performance</span><span>Memory</span><span>Application</span><span>Security</span>
+                            <span>Lighthouse</span><span>Coverage</span><span>Mobile Emulation</span><span>Throttling</span>
+                            <span>WebSocket Inspector</span><span>Local Overrides</span><span>Snippets</span>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <h3>Version Control</h3>
+                        <div class="tags">
+                            <span>Git</span><span>GitHub</span><span>GitLab</span><span>TortoiseSVN</span> <span>SVN</span><span>
+                                Teams
+                                Foundation Server
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section alt reveal">
+            <div class="container">
+                <h2>Experience</h2>
+                <div class="timeline">
+
+
+                    <article class="timeline-item">
+                        <h3>
+                            <span class="line">Senior .NET Developer</span>
+                            <span class="line">DPS (Outsource)</span>
+                            <span class="line">Ministry of Finance (MOF) </span>
+                            <span class="line">
+                                Project:
+                                <li>Tax Certification System</li>
+                            </span>
+                        </h3>
+                        <div class="meta">Kuwait | 2023 – Present</div>
+
+                    </article>
+
+                    <article class="timeline-item">
+                        <h3>
+                            <span class="line">Senior .NET Developer</span>
+                            <span class="line">DPS (Outsource)</span>
+                            <span class="line">Kuwait Fund for Arab Economic Development</span>
+                            <span class="line">
+                                Project:
+                                <li>Disbursement – Loans, Grants & Claims Management System</li>
+                            </span>
+                        </h3>
+                        <div class="meta">Kuwait | 2022 – Present</div>
+
+                    </article>
+
+                    <article class="timeline-item">
+                        <h3>
+                            <span class="line">Senior .NET Developer</span>
+                            <span class="line">DPS (Outsource)</span>
+                            <span class="line">Warba Insurance & Reinsurance</span>
+                            <span class="line">
+                                Projects:
+                                <li>Border Motor & TPL insurance</li>
+                                <li>Motor Insurance Policy Purchase Web Portal</li>
+                                <li>Motor Insurance Policy Purchase Mobile Apps APIs </li>
+                                <li>All Payment Integrations : CyberSource Mstr/Visa Cards, KNET, Verifone hardwares</li>
+                            </span>
+                        </h3>
+                        <div class="meta">Kuwait | 2023 – Present</div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <h3>
+                            <span class="line">Senior .NET Developer</span>
+                            <span class="line">DPS (Outsource)</span>
+                            <span class="line">Capital Market Authority (CMA)</span>
+                            <span class="line">
+                                Project:
+                                <li>Ministry Budgeting System</li>
+                            </span>
+                        </h3>
+                        <div class="meta">Kuwait | 2022 – Present</div>
+
+                    </article>
+                    <article class="timeline-item">
+                        <h3>
+                            <span class="line">Senior .NET Developer</span>
+                            <span class="line">Digital Processing System (DPS)</span>
+                        </h3>
+                        <div class="meta">Kuwait | 2022 – Present</div>
+
+                    </article>
+
+                    <article class="timeline-item">
+                        <h3>
+                            <span class="line">Senior .NET Developer</span>
+                            <span class="line">Armada Retail Concept</span>
+                        </h3>
+                        <div class="meta">Kuwait | 2014 – 2022</div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <h3>
+                            <span class="line">.NET Developer</span>
+                            <span class="line">Bobyan Delivery International</span>
+                        </h3>
+                        <div class="meta">Kuwait | 2016 – 2020</div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <h3>
+                            <span class="line">.NET Developer</span>
+                            <span class="line">Freelance</span>
+                            <span class="line">Contract / Project / Task / Problem / Architecture</span>
+                        </h3>
+                        <div class="meta">Kuwait | 2013 – 2022</div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section reveal">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="projects-toolbar">
+                    <div class="filterbar card">
+                        <input id="project-search" type="search" placeholder="Search projects…" aria-label="Search projects">
+                    </div>
+                    <div class="expanders">
+                        <button class="pill" id="expandAll">Expand all</button>
+                        <button class="pill" id="collapseAll">Collapse all</button>
+                    </div>
+                </div>
+                <div class="projects-grid">
+                    <article class="card project">
+                        <header>
+                            <h3>TeltraOne ERP</h3>
+                        </header>
+                        <details class="project-details">
+                            <summary>
+                                <span data-en="Show details" data-ar="عرض التفاصيل">Show details</span><span class="chev">⌄</span>
+                            </summary>
+                            <div class="detail-body">
+                                <!-- <p><strong>Jul 2025 | Kuwait</strong></p> -->
+                                <p><strong>Project Summary (short):</strong></p>
+                                <p>
+                                    Multi-company ERP for SMEs with strict data governance (CompanyID on every table, audit fields,
+                                    RowVersion) and EN/AR bilingual readiness. The platform delivers end-to-end back-office workflows with
+                                    clean REST APIs for mobile/partner integrations, internal messaging, real-time notifications, AI
+                                    “read-style” digests, and event-driven auto-emails. Every screen and option is controlled by dynamic,
+                                    role-based permissions; each module has its own dashboard, and Owner/Executive roles see advanced
+                                    cross-module analytics that combine all dashboards.
+                                </p>
+                                <p><strong>Tech Used (full):</strong></p>
+                                <ol class="dense">
+                                    <li>
+                                        <strong>Backend:</strong> C# 10, ASP.NET Core 6 (MVC + Web API), ASP.NET Identity (cookie for MVC;
+                                        JWT for APIs), SignalR (real-time), Hosted Services/BackgroundService (jobs),
+                                        FluentValidation/DataAnnotations, configuration via appsettings.
+                                    </li>
+                                    <li>
+                                        <strong>Data:</strong> SQL Server 2019/2022 (v15+), Dapper (primary) + EF Core (where tracking is
+                                        needed), parameterized Stored Procedures, Transactions/Isolation Levels, RowVersion concurrency,
+                                        composite indexes, DB seeders.
+                                    </li>
+                                    <li>
+                                        <strong>Front-end:</strong> Razor Views, Bootstrap 4, jQuery, unobtrusive validation, partial
+                                        views/layouts, EN/AR localization wrappers.
+                                    </li>
+                                    <li>
+                                        <strong>Security & Governance:</strong> Multi-company tenancy (CompanyID everywhere), granular
+                                        RBAC down to page/section/button (view/create/edit/delete/export/approve), anti-forgery tokens,
+                                        input validation, parameterized SQL, full audit trails (Created/Updated/Deleted, by/at), secure file
+                                        ACLs.
+                                    </li>
+                                    <li>
+                                        <strong>Integrations:</strong> MyFatoorah, Instagram, Twitter, WhatsApp, Allowmena shipping,
+                                        push-to-talk APIs, GPS tracking, ZKTeco biometric, DVR/RTSP live streams.
+                                    </li>
+                                    <li>
+                                        <strong>Ops/Hosting:</strong> IIS 10, Web Deploy, env-based configs, health checks, structured
+                                        logging, resilient retries.
+                                    </li>
+                                    <li>
+                                        <strong>UX/Utilities:</strong> CSV/Excel export, number series/formatting, bilingual labels/data.
+                                    </li>
+                                    <li>
+                                        <strong>Messaging, Notifications & Auto-Emails:</strong>
+                                        <ol class="dense">
+                                            <li>
+                                                <strong>Internal Messaging:</strong> Outlook-style inbox (To/Cc), threads, attachments,
+                                                watchers, read receipts, job/request linking.
+                                            </li>
+                                            <li>
+                                                <strong>Real-Time Notifications:</strong> SignalR toasts + in-app inbox with per-user
+                                                read/unread, mute/snooze, granular events.
+                                            </li>
+                                            <li>
+                                                <strong>AI “Read-Style” Digests:</strong> Background jobs condense raw events into readable
+                                                summaries.
+                                            </li>
+                                            <li>
+                                                <strong>Auto-Emails:</strong> DB templates, event triggers, queued dispatch with retry/backoff
+                                                + audit copies.
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                                <p><strong>Modules (full list with one-line summaries)</strong></p>
+                                <li>
+                                    Company &amp; Tenant Admin — Multi-company/ Multi-Tenant setup with Company on every table and
+                                    scoped data access.
+                                </li>
+                                <li>
+                                    Users, Roles &amp; Menu Permissions — Dynamic per-screen/per-action RBAC
+                                    (view/create/edit/delete/export/approve).
+                                </li>
+                                <li>Localization (EN/AR) — Bilingual UI and data columns; switchable labels and formats.</li>
+                                <li>Audit &amp; Compliance — Who/when/what for every change; RowVersion for optimistic concurrency.</li>
+                                <li>System Settings &amp; Masters — Centralized master data, numbering schemes, configuration.</li>
+                                <li>Email Templates — DB-driven templates powering event-based auto-emails.</li>
+                                <li>Notification Center — Real-time SignalR alerts with in-app inbox and read/unread state.</li>
+                                <li>Internal Messaging — Threaded messages, To/Cc, attachments, watchers, read receipts.</li>
+                                <li>
+                                    Shared Directory/ Document Management — Reading IO system Folder tree with company/role/user ACLs,
+                                    previews, and full audit log.
+                                </li>
+                                <li>Reports &amp; Analytics — Operational/finance reports with drill-downs and exports.</li>
+                                <li>Module Dashboards — Each module exposes KPIs/queues tailored to its workflow.</li>
+                                <li>Owner/Executive Analytics — Cross-module KPIs combining all dashboards for leadership.</li>
+                                <li>Public API Layer — REST endpoints for mobile apps/partners with JWT scopes and rate-limits.</li>
+                                <li>Integration Hub — Connectors for payments, shipping, social, comms, biometrics, GPS, DVR.</li>
+                                <li>Commercial, Operations &amp; HR</li>
+                                <li>Presales &amp; CRM — Clients/sub-clients, opportunities, follow-ups, quotations.</li>
+                                <li>Projects &amp; Tasks — Projects, milestones, assignments, time notes, progress views.</li>
+                                <li>Procurement — PR → RFQ → Quotation → PO → GRN → Bill → Payment with approvals.</li>
+                                <li>Vendor Management — Onboarding, contracts, KPIs/scorecards, compliance docs.</li>
+                                <li>Inventory &amp; Warehouses — Multi-warehouse stock, transfers, optional serial/IMEI tracking.</li>
+                                <li>Sales &amp; Billing — Quotes → invoices, receipts, VAT/tax handling, payment reconciliation.</li>
+                                <li>
+                                    Accounts (General Ledger) — Ledger, trial balance, P&amp;L, balance sheet, cash in/out, expenses;
+                                    auto-postings from procurement &amp; sales.
+                                </li>
+                                <li>HR &amp; Payroll — Employees, allowances/deductions, attendance, OT/late rules, black points.</li>
+                                <li>Attendance &amp; Shifts — Shift rosters, exceptions; ZKTeco biometric ingestion into payroll.</li>
+                                <li>Ticketing &amp; Helpdesk — Issue intake, categories, SLAs, comments, attachments.</li>
+                                <li>Secretary/Agenda — Tasks, reminders, meeting notes, follow-up prompts.</li>
+                                <li>Court Case Management — Cases, hearings, documents, statutory deadlines &amp; reminders.</li>
+                                <li>Document &amp; Template Center — Standard letters/forms with placeholders and versioning.</li>
+                                <li>Dashcams &amp; CCTV (DVR) — Live streaming from DVR/RTSP feeds into secured in-app viewers.</li>
+                                <li>Logistics, Social &amp; Comms Integrations</li>
+                                <li>Payments (MyFatoorah) — Online payments with webhook callbacks and receipt logging.</li>
+                                <li>Shipping (Allowmena) — Shipment order creation, status tracking, and label retrieval.</li>
+                                <li>Instagram (Multi-Account) — Post/retrieve content/insights for multiple business accounts.</li>
+                                <li>Twitter (X) Integration — Publishing and engagement metrics where applicable.</li>
+                                <li>WhatsApp (Multi-Account) — Template messaging, inbound routing, and conversation audit.</li>
+                                <li>Push-to-Talk (Walkie-Talkie) — Auto enable/disable services based on payment status.</li>
+                                <li>GPS Tracking APIs — Auto enable/disable GPS-based services by subscription/payment.</li>
+                            </div>
+                            <!-- </div> -->
+                        </details>
+                    </article>
+
+                    <article class="card project">
+                        <header>
+                            <h3>Kuwait Public Transport Company <strong>(KPTC)</strong></h3>
+                        </header>
+                        <details class="project-details">
+                            <summary>
+                                <span data-en="Show details" data-ar="عرض التفاصيل">Show details</span><span class="chev">⌄</span>
+                            </summary>
+                            <div class="detail-body">
+                                <div class='seg'>
+                                    <strong>Lead / Project Manager / .NET Developer (Contract)</strong> <br>
+                                    <strong>Garage Management System</strong>
+                                    <p>
+                                        <strong>Project Summary:</strong> A fully digital enterprise-grade system for KPTC to manage its garages,
+                                        workshops, and field operations. Covers vehicle maintenance, inspections, violation handling,
+                                        recovery/winch dispatch, and sticker operations, with role-based access, auditability, and analytics.
+                                    </p>
+                                    <p>
+                                        Built scalable REST APIs and a React frontend for back-office staff and field teams,
+                                        ensuring secure data flows, robust logging, and efficient long-running reports.
+                                    </p>
+                                    <ul>
+                                        <li>Entire Garage Management System Modules:</li>
+                                        <ul>
+                                            <li>Vehicle & Workshop Management – track repairs, maintenance history, and inventory</li>
+                                            <li>Violation Handling – record and manage vehicle or driver violations</li>
+                                            <li>Recovery / Winch Dispatch – assign drivers, track status: Pending → Assigned → Completed</li>
+                                            <li>Sticker Operations – issuance, renewals, compliance tracking, and audit logs</li>
+                                            <li>Role-Based Access & Auditability – segregated duties and full action tracking</li>
+                                            <li>Reporting & Analytics – operational KPIs, maintenance history, and fleet performance dashboards</li>
+                                            <li>Field Operations Integration – real-time mobile updates, secure API sync</li>
+                                            <li>And Many More</li>
+                                        </ul>
+                                    </ul>
+                                </div>
+                            </div>
+                        </details>
+                    </article>
+
+                    <article class="card project">
+                        <header>
+                            <h3>Warba Insurance – Border Gate Application</h3>
+                        </header>
+                        <details class="project-details">
+                            <summary>
+                                <span data-en="Show details" data-ar="عرض التفاصيل">Show details</span><span class="chev">⌄</span>
+                            </summary>
+                            <div class="detail-body">
+                                <div class='seg'>
+                                    <p>
+                                        Warba Insurance – Border Gate Application (Used at Kuwait Borders “Nuwaiseeb”, “Abdali”, “Salmi”)
+                                    </p>
+                                    <p>
+                                        Description: Developed a border gate application for Insurance Policy Issuance with ANPR cameras,
+                                        OCR devices, and multiple system integrations for vehicle entry processing.
+                                    </p>
+                                    <p>Framework: .Net Core</p>
+                                    <p>Language: C#</p>
+                                    <p>Frontend: Bootstrap, HTML, CSS, JavaScript, jQuery</p>
+                                    <p>Backend: SQL Server 2019</p>
+                                </div>
+                            </div>
+                        </details>
+                    </article>
+
+                    <article class="card project">
+                        <header>
+                            <h3>Warba Insurance – Web Portal &amp; Mobile Application APIs</h3>
+                        </header>
+                        <details class="project-details">
+                            <summary>
+                                <span data-en="Show details" data-ar="عرض التفاصيل">Show details</span><span class="chev">⌄</span>
+                            </summary>
+                            <div class="detail-body">
+                                <div class='seg'>
+                                    <p>
+                                        Designed and implemented APIs for motor policy purchases via web and mobile
+                                        applications.
+                                    </p>
+                                    <p>Development of WebPortal</p>
+                                    <p>Framework: .Net Core</p>
+                                    <p>Language: C#</p>
+                                    <p>Frontend: Bootstrap, HTML, CSS, JavaScript, jQuery</p>
+                                    <p>Backend: SQL Server 2019</p>
+                                </div>
+                            </div>
+                        </details>
+                    </article>
+
+                    <article class="card project">
+                        <header>
+                            <h3>Warba Insurance (Integrations)</h3>
+                        </header>
+                        <details class="project-details">
+                            <summary>
+                                <span data-en="Show details" data-ar="عرض التفاصيل">Show details</span><span class="chev">⌄</span>
+                            </summary>
+                            <div class="detail-body">
+                                <div class='seg'>
+                                    <p>Data Integration: Integrated Warba’s core system (First Apex) with external data sources.</p>
+                                    <p>Automation &amp; Reporting: Developed auto email and auto reports generation systems.</p>
+                                    <p>API Integrations: Implemented WhatsApp API integration with Octopus APIs.</p>
+                                    <p>Payment Gateway Integrations:</p>
+                                    <p>Integrated CyberSource for Visa &amp; MasterCard payments.</p>
+                                    <p>Integrated KNET payment gateway for seamless transactions.</p>
+                                    <p>Integrated POS Terminal(Hardware - verifone P400) with System for seamless transactions.</p>
+                                </div>
+                            </div>
+                        </details>
+                    </article>
+
+                    <article class="card project">
+                        <header>
+                            <h3>Ministry of Finance (MOF) – Kuwait Tax Certification System TCRS Tax Certification Request system</h3>
+                        </header>
+                        <details class="project-details">
+                            <summary>
+                                <span data-en="Show details" data-ar="عرض التفاصيل">Show details</span><span class="chev">⌄</span>
+                            </summary>
+                            <div class="detail-body">
+                                <div class='seg'>
+                                    <p>
+                                        • Project Overview: Developed a public portal for applicants and an admin panel for back-office
+                                        operations.
+                                    </p>
+                                    <p>Framework: ASP.NET MVC</p>
+                                    <p>Language: C#</p>
+                                    <p>Frontend: Bootstrap, HTML, CSS, Angular JS</p>
+                                    <p>Backend: SQL Server • Integrations:</p>
+                                    <p>MOFA (Ministry of Foreign Affairs) integration</p>
+                                    <p>Sahel App integration</p>
+                                    <p>Mobile ID authentication</p>
+                                    <p>Tasdeed Payment Gateway for online transactions</p>
+                                    <p>MOI APIs Integration for checking resident stay in Kuwait and verifying their identity</p>
+                                    <p>GoSign (Digital Signature) integration for secure document signing</p>
+                                    <p>SQL-based Core System (KITAS) integration for data exchange</p>
+                                </div>
+                            </div>
+                        </details>
+                    </article>
+
+                    <article class="card project">
+                        <header>
+                            <h3>Kuwait Capital Market Authority (CMA) – Budgeting System</h3>
+                        </header>
+                        <details class="project-details">
+                            <summary>
+                                <span data-en="Show details" data-ar="عرض التفاصيل">Show details</span><span class="chev">⌄</span>
+                            </summary>
+                            <div class="detail-body">
+                                <div class='seg'>
+                                    <p>
+                                        Project Overview: Developed a comprehensive budgeting system for CMA to manage and allocate budgets
+                                        for all ministries in Kuwait, including employee salaries and financial planning based on predefined
+                                        rules.
+                                    </p>
+                                    <p>Framework: ASP.NET MVC5</p>
+                                    <p>Language: C#</p>
+                                    <p>Frontend: Bootstrap, HTML, CSS, JavaScript, jQuery, Telerik Kendo</p>
+                                    <p>Backend: SQL Server</p>
+                                    <p>• Key Features:</p>
+                                    <p>
+                                        Salary calculations based on employee positions and different rules for Kuwaiti and non-Kuwaiti
+                                        employees.
+                                    </p>
+                                    <p>Budget allocation in chapters for the entire fiscal year.</p>
+                                    <p>Multiple budget categories for detailed financial planning.</p>
+                                    <p>Multiple Integrations with many Ministry APIs for salary Budget Closure</p>
+                        </details>
+                    </article>
+
+                    <article class="card project">
+                        <header>
+                            <h3>Kuwait Fund Disbursement Application (Loans, Grands &amp; Claims Management System)</h3>
+                        </header>
+                        <details class="project-details">
+                            <summary>
+                                <span data-en="Show details" data-ar="عرض التفاصيل">Show details</span><span class="chev">⌄</span>
+                            </summary>
+                            <div class="detail-body">
+                                <div class='seg'>
+                                    <p>
+                                        The Kuwait Fund Disbursement Application is a robust and secure digital platform designed to manage
+                                        the complete lifecycle of loans, grants, and claims, repayments, interest used by the Kuwait Fund.
+                                        The system automates the application, approval, disbursement, and repayment processes, ensuring
+                                        transparency and efficiency in fund distribution and recollections.
+                                    </p>
+                                    <p>Framework: .Net MVC5</p>
+                                    <p>Language: C#</p>
+                                    <p>Frontend: Bootstrap, HTML, CSS, JavaScript, jQuery, Telerik Kendo</p>
+                                    <p>Backend: Oracle 19c</p>
+                                </div>
+                            </div>
+                        </details>
+                    </article>
+
+                    <article class="card project">
+                        <header>
+                            <h3>WMS (Warehouse Management System)</h3>
+                        </header>
+                        <details class="project-details">
+                            <summary>
+                                <span data-en="Show details" data-ar="عرض التفاصيل">Show details</span><span class="chev">⌄</span>
+                            </summary>
+                            <div class="detail-body">
+                                <div class='seg'>
+                                    <p>
+                                        A Complete Warehouse Management System which is a comprehensive and integrated solution designed to
+                                        streamline warehouse operations by combining online order management, inventory control, bin
+                                        location tracking, and handheld device integration. This system enhances warehouse efficiency,
+                                        accuracy, and real-time inventory management, ensuring seamless order fulfillment and replenishment.
+                                    </p>
+                                    <p>Framework: .Net Core</p>
+                                    <p>Language: C#</p>
+                                    <p>Frontend: Bootstrap, HTML, CSS, JavaScript</p>
+                                    <p>Backend: SQL Server 2014</p>
+                                    <p>Development Duration: Dec 2018 - Feb 2019</p>
+                                </div>
+                            </div>
+                        </details>
+                    </article>
+
+                    <article class="card project">
+                        <header>
+                            <h3>Windows POS (Point of Sale System)</h3>
+                        </header>
+                        <details class="project-details">
+                            <summary>
+                                <span data-en="Show details" data-ar="عرض التفاصيل">Show details</span><span class="chev">⌄</span>
+                            </summary>
+                            <div class="detail-body">
+                                <div class='seg'>
+                                    <p>Complete POS (Point of Sale System) based on Windows Forms platform.</p>
+                                    <p>Framework: .Net Core</p>
+                                    <p>Language: C#</p>
+                                    <p>Frontend: Windows</p>
+                                    <p>Backend: SQL Server 2014</p>
+                                    <p>Development Duration: Jan 2019 - Jan 2019</p>
+                                </div>
+                            </div>
+                        </details>
+                    </article>
+
+                    <article class="card project">
+                        <header>
+                            <h3>Instagram API Integration</h3>
+                        </header>
+                        <details class="project-details">
+                            <summary>
+                                <span data-en="Show details" data-ar="عرض التفاصيل">Show details</span><span class="chev">⌄</span>
+                            </summary>
+                            <div class="detail-body">
+                                <div class='seg'>
+                                    <p>
+                                        Application to Upload Multiple Photos and Videos to Instagram with data like its content, price,
+                                        information,
+                                    </p>
+                                    <p>
+                                        etc.... As we cannot upload any media from a computer in Instagram so the application will use
+                                        Instagram
+                                    </p>
+                                    <p>
+                                        API, integrate data to our Instagram account, and create a post on Instagram with professional APIs
+                                        of Instagram.
+                                    </p>
+                                    <p>(For Businesses who use Instagram / social media app platforms as their means to sell)</p>
+                                    <p>Framework: .Net Core</p>
+                                    <p>Language: C#</p>
+                                    <p>Development Duration: Jan 2020 - Jan 2020</p>
+                                    <p>Modular: Windows</p>
+                                    <p>APIs: Instagram Authentication &amp; Post Creation</p>
+                                </div>
+                            </div>
+                        </details>
+                    </article>
+
+                    <article class="card project">
+                        <header>
+                            <h3>Salary Distribution Web App</h3>
+                        </header>
+                        <details class="project-details">
+                            <summary>
+                                <span data-en="Show details" data-ar="عرض التفاصيل">Show details</span><span class="chev">⌄</span>
+                            </summary>
+                            <div class="detail-body">
+                                <div class='seg'>
+                                    <p>
+                                        This is a salary distribution application, that helps in distributing salaries by capturing the
+                                        digital signature of the receiver while the salary is paid.
+                                    </p>
+                                    <p>
+                                        It can be used in multiple environments such as when a company is a single or a group of companies
+                                        or when a company has multiple offices, and the salary is to be paid in CASH or CHEQUE etc....
+                                    </p>
+                                    <p>
+                                        The application will store all data into its database and the data will be used to generate N&#x27;
+                                        numbers of multiple category reports, dashboards, and details checking facilities and many more....
+                                    </p>
+                                    <p>
+                                        As the application has the menu access system, which will allow us to give access for the required
+                                        menus to a particular employee as per the position and the work process of an employee...
+                                    </p>
+                                    <p>The application has modules for :</p>
+                                    <p>Modules & Reports</p>
+                                    <li>User Creation
+                                    <li>
+                                    <li>Salary Paid Report
+                                    <li>
+                                    <li>Menu Access Based on User
+                                    <li>
+                                    <li>Salary Unpaid Report
+                                    <li>
+                                    <li>Payment Of Salaries to The Employee
+                                    <li>
+                                    <li>Partial Paid Salary Report
+                                    <li>
+                                    <li>Integration Between a Digital Signature Pad
+                                    <li>
+                                    <li>Payment By Supervisor
+                                    <li>
+                                    <li>Capture Live Signature
+                                    <li>
+                                    <li>Amount Issued for Payment Of Salaries
+                                    <li>
+                                    <li>Paid, Unpaid, Partial Paid Enquiry Checking
+                                    <li>
+                                    <li>Amount Paid
+                                    <li>
+                                    <li>Attendance Biometrics Integration
+                                    <li>
+                                    <li>Amount Pending
+                                    <li>
+                                    <li>Attendance Query
+                                    <li>
+                                    <li>Year Wise
+                                    <li>
+                                    <li>Official Off Management
+                                    <li>
+                                    <li>Month Wise
+                                    <li>
+                                    <li>Salary Calculation Screen
+                                    <li>
+                                    <li>Week Wise
+                                    <li>
+                                    <li>Late Permission Screen
+                                    <li>
+                                    <li>Day Wise
+                                    <li>
+                                    <li>Annual Leave Management Screen
+                                    <li>
+                                    <li>All Attendance and Employee Reports
+                                    <li>
+                                    <li>And Many More Modules, Reports and Crud Operations
+                                    <li>
+                                        <p>Framework: .Net</p>
+                                        <p>Language: C#</p>
+                                        <p>Modular: Asp.net MVC</p>
+                                        <p>Frontend: HTML, Bootstrap, CSS, JavaScript</p>
+                                        <p>Backend: SQL Server 2014</p>
+                                        <p>Development Duration: Nov 2021 - Jan 2022</p>
+                                </div>
+                            </div>
+                        </details>
+                    </article>
+
+                    <article class="card project">
+                        <header>
+                            <h3>Delivery order Placing Website + Admin Panel and Order Processing System</h3>
+                        </header>
+                        <details class="project-details">
+                            <summary>
+                                <span data-en="Show details" data-ar="عرض التفاصيل">Show details</span><span class="chev">⌄</span>
+                            </summary>
+                            <div class="detail-body">
+                                <div class='seg'>
+                                    <p>A website for customers to place delivery orders as the company was providing delivery service.</p>
+                                    <p>
+                                        An Admin for the Company Staff, which has the modules for Order Processing, Shipping, Delivery and
+                                        store management...
+                                    </p>
+                                    <p>Framework: .Net MVC</p>
+                                    <p>Language: C#</p>
+                                    <p>Modular: Asp.Net MVC</p>
+                                    <p>Frontend: Html, CSS, Bootstrap, JavaScript</p>
+                                    <p>Backend: SQL Server 2014</p>
+                                    <p>Development Duration: Jan 2020 - Jan 2020</p>
+                                </div>
+                            </div>
+                        </details>
+                    </article>
+
+                    <article class="card project">
+                        <header>
+                            <h3>Vehicle, Delivery, Employee &amp; Payroll Management System</h3>
+                        </header>
+                        <details class="project-details">
+                            <summary>
+                                <span data-en="Show details" data-ar="عرض التفاصيل">Show details</span><span class="chev">⌄</span>
+                            </summary>
+                            <div class="detail-body">
+                                <div class='seg'>
+                                    <p>A Windows Based Application for Bobyan International Company Which includes:</p>
+                                    <p>Vehicle Management</p>
+                                    <p>Delivery management System</p>
+                                    <p>Employee management System</p>
+                                    <p>Payroll Management System.</p>
+                                    <p>This all-in-one application/software was developed as per the company&#x27;s requirements...</p>
+                                    <p>Framework: .Net Core</p>
+                                    <p>Language: C#</p>
+                                    <p>Modular: Windows</p>
+                                    <p>Backend: SQL Server 2014</p>
+                                    <p>Development Duration: Sep 2018 - Jan 2019</p>
+                                </div>
+                            </div>
+                        </details>
+                    </article>
+
+                    <article class="card project">
+                        <header>
+                            <h3>WMS with RFID (Radio Frequency Identification) Technology</h3>
+                        </header>
+                        <details class="project-details">
+                            <summary>
+                                <span data-en="Show details" data-ar="عرض التفاصيل">Show details</span><span class="chev">⌄</span>
+                            </summary>
+                            <div class="detail-body">
+                                <div class='seg'>
+                                    <p>
+                                        Warehouse management system with RFID Cane &amp; Impinj devices with programmed and Printed RFID
+                                        antenna labels
+                                    </p>
+                                    <p>Framework: .Net MVC</p>
+                                    <p>Language: C#</p>
+                                    <p>Modular: Asp.Net MVC</p>
+                                    <p>Frontend: Html, CSS, Bootstrap, JavaScript</p>
+                                    <p>Backend: SQL Server 2012</p>
+                                    <p>Development Duration: Jan 2020 - Feb 2020</p>
+                                    <p>Web Services</p>
+                                    <p>
+                                        Web Services to Operate a Delivery Management Android Application, interact and integrate to
+                                        database using the Web Services Developed and hosted in the company&#x27;s internal network.
+                                    </p>
+                                    <p>Framework: .Net Core</p>
+                                    <p>Language: C#</p>
+                                    <p>Backend: Oracle 11g</p>
+                                    <p>Development Duration: Jan 2020 - Feb 2020</p>
+                                </div>
+                            </div>
+                        </details>
+                    </article>
+
+                    <article class="card project">
+                        <header>
+                            <h3>Ticket Raising System</h3>
+                        </header>
+                        <details class="project-details">
+                            <summary>
+                                <span data-en="Show details" data-ar="عرض التفاصيل">Show details</span><span class="chev">⌄</span>
+                            </summary>
+                            <div class="detail-body">
+                                <div class='seg'>
+                                    <p>
+                                        To be used by Stores and Warehouses for Stores and Warehouses non-inventory transactions &amp;
+                                        Stores Maintenance Issues which can be reported to the concerned department by raising an issue
+                                        ticket.
+                                    </p>
+                                    <p>Framework: .Net MVC</p>
+                                    <p>Language: C#</p>
+                                    <p>Frontend: Html, CSS, JavaScript, Bootstrap</p>
+                                    <p>Modular: Asp.net MVC</p>
+                                    <p>Backend: SQL Server 2014</p>
+                                    <p>Development Duration: Jan 2021 - Jan 2021</p>
+                                </div>
+                            </div>
+                        </details>
+                    </article>
+
+                    <article class="card project">
+                        <header>
+                            <h3>Software Modules Requesting App</h3>
+                        </header>
+                        <details class="project-details">
+                            <summary>
+                                <span data-en="Show details" data-ar="عرض التفاصيل">Show details</span><span class="chev">⌄</span>
+                            </summary>
+                            <div class="detail-body">
+                                <div class='seg'>
+                                    <p>
+                                        Software Modules Requesting App is an application that allows all departments within the company to
+                                        request any module in their company&#x27;s internal management application...
+                                    </p>
+                                    <p>there are a few steps for the approval of the request...</p>
+                                    <p>The end user enters all his/ her requirements in the application will all media attached ...</p>
+                                    <p>The request is forwarded to the end user&#x27;s Line Manager</p>
+                                    <p>The Edit &amp; Approval Process</p>
+                                    <p>Then The Request is forwarded to the GM or the Owner</p>
+                                    <p>The Edit &amp; Approval Process</p>
+                                    <p>Then The Request is forwarded to the Module Development Team</p>
+                                    <p>The Edit &amp; Approval Process from the Development Team</p>
+                                    <p>
+                                        All Managers, owners, and the End User will be notified by the feedback of the development team.
+                                    </p>
+                                    <p>, which includes Delivery time, and many more details...</p>
+                                    <p>Framework: .Net</p>
+                                    <p>Language: C#</p>
+                                    <p>Frontend: Html, CSS, Bootstrap, JavaScript</p>
+                                    <p>Modular: Asp.net MVC</p>
+                                    <p>Backend: SQL Server 2014</p>
+                                    <p>Development Duration: Jan 2021 - Feb 2021</p>
+                                </div>
+                            </div>
+                        </details>
+                    </article>
+
+                    <article class="card project">
+                        <header>
+                            <h3>Restful Web API for Ecommerce Website</h3>
+                        </header>
+                        <details class="project-details">
+                            <summary>
+                                <span data-en="Show details" data-ar="عرض التفاصيل">Show details</span><span class="chev">⌄</span>
+                            </summary>
+                            <div class="detail-body">
+                                <div class='seg'>
+                                    <p>
+                                        Restful Web API for online order processing system (from order placed to order Shipping Processes)
+                                        which includes all steps of processing an order from the warehouse or store.
+                                    </p>
+                                    <p>Framework: .Net</p>
+                                    <p>Language: C#</p>
+                                    <p>Modular: Asp.net MVC</p>
+                                    <p>Backend: SQL Server 2014, Oracle 11g</p>
+                                    <p>Development Duration: Feb 2022 - Mar 2022</p>
+                                </div>
+                            </div>
+                        </details>
+                    </article>
+
+                    <article class="card project">
+                        <header>
+                            <h3>Restful Web API for Data Integration &amp; Interaction</h3>
+                        </header>
+                        <details class="project-details">
+                            <summary>
+                                <span data-en="Show details" data-ar="عرض التفاصيل">Show details</span><span class="chev">⌄</span>
+                            </summary>
+                            <div class="detail-body">
+                                <div class='seg'>
+                                    <p>
+                                        Restful Web API for Data Integration between 7 different databases of SAP ERP System as there are 7
+                                        databases which represent each database as each Company.
+                                    </p>
+                                    <p>API was made to interact between all 7 Databases with an ANDROID, IOS, or WEB Applications...</p>
+                                    <p>Framework: .Net MVC</p>
+                                    <p>Language: C#</p>
+                                    <p>Modular: Asp.net MVC</p>
+                                    <p>Backend: SQL Server 2014, Oracle 11g</p>
+                                    <p>Development Duration: Jan 2020 - Apr 2020</p>
+                                </div>
+                            </div>
+                        </details>
+                    </article>
+
+                    <article class="card project">
+                        <header>
+                            <h3>Dynamic Business Website</h3>
+                        </header>
+                        <details class="project-details">
+                            <summary>
+                                <span data-en="Show details" data-ar="عرض التفاصيل">Show details</span><span class="chev">⌄</span>
+                            </summary>
+                            <div class="detail-body">
+                                <div class='seg'>
+                                    <p>
+                                        The business website made for Bobyan Delivery International is as dynamic as even the colors of
+                                        websites are DB driven.
+                                    </p>
+                                    <p>Framework: .Net MVC</p>
+                                    <p>Language: C#</p>
+                                    <p>Modular: Asp.net MVC</p>
+                                    <p>Backend: SQL Server 2014</p>
+                                    <p>Development Duration: Jan 2021 - Jan 2021</p>
+                                </div>
+                            </div>
+                        </details>
+                    </article>
+
+                    <article class="card project">
+                        <header>
+                            <h3>Data Integration Application</h3>
+                        </header>
+                        <details class="project-details">
+                            <summary>
+                                <span data-en="Show details" data-ar="عرض التفاصيل">Show details</span><span class="chev">⌄</span>
+                            </summary>
+                            <div class="detail-body">
+                                <div class='seg'>
+                                    <p>
+                                        Data Integrations Using Consoles from any database from any platform to any database to any
+                                        platform.
+                                    </p>
+                                    <p>
+                                        , which will have queries passed as parameters to the application from the Database, which will
+                                        move data continuously without any mistake and keep records of all performed tasks in the structure
+                                        of Logs...
+                                    </p>
+                                    <p>Framework: .Net Core</p>
+                                    <p>Language: C#</p>
+                                    <p>Modular: Console</p>
+                                    <p>Backend: SQL Server 2014, Oracle 11g</p>
+                                    <p>Development Duration: Apr 2021 - May 2021</p>
+                                </div>
+                            </div>
+                        </details>
+                    </article>
+
+                    <article class="card project">
+                        <header>
+                            <h3>All Purpose Office Management System</h3>
+                        </header>
+                        <details class="project-details">
+                            <summary>
+                                <span data-en="Show details" data-ar="عرض التفاصيل">Show details</span><span class="chev">⌄</span>
+                            </summary>
+                            <div class="detail-body">
+                                <div class='seg'>
+                                    <p>
+                                        A common application for all departments of the company with different purposes according to
+                                        department requirements.
+                                    </p>
+                                    <p>Framework: .Net MVC</p>
+                                    <p>Language: C#</p>
+                                    <p>Modular: Asp.net MVC</p>
+                                    <p>Frontend: JavaScript, Html, CSS, Bootstrap</p>
+                                    <p>Backend: SQL Server 2014, Oracle 11g</p>
+                                    <p>Development Duration: Aug 2017 – Continuously Adding Modules</p>
+                                </div>
+                            </div>
+                        </details>
+                    </article>
+
+                    <article class="card project">
+                        <header>
+                            <h3>Web POS (Point of Sale)</h3>
+                        </header>
+                        <details class="project-details">
+                            <summary>
+                                <span data-en="Show details" data-ar="عرض التفاصيل">Show details</span><span class="chev">⌄</span>
+                            </summary>
+                            <div class="detail-body">
+                                <div class='seg'>
+                                    <p>
+                                        Point of Sale System for a Nursery in Kuwait with Facilities of Store, Product, Inventory, access,
+                                        and many more modules of management, CRM Customer management and QR Code-based Information Providing
+                                        to customers with their own Mobile&#x27;s Camera.
+                                    </p>
+                                    <p>Framework: .Net MVC</p>
+                                    <p>Language: C#</p>
+                                    <p>Modular: Asp.net MVC</p>
+                                    <p>Frontend: Html, CSS, Bootstrap, JavaScript, jQuery</p>
+                                    <p>Backend: SQL Server 2019</p>
+                                    <p>Development Duration: Feb 2021 - May 2021</p>
+                                </div>
+                            </div>
+                        </details>
+                    </article>
+
+                    <article class="card project">
+                        <header>
+                            <h3>Restful Web API for Android WMS System</h3>
+                        </header>
+                        <details class="project-details">
+                            <summary>
+                                <span data-en="Show details" data-ar="عرض التفاصيل">Show details</span><span class="chev">⌄</span>
+                            </summary>
+                            <div class="detail-body">
+                                <div class='seg'>
+                                    <p>
+                                        which has all API methods that let’s an android application to Communicate/ interact with the
+                                        database and
+                                    </p>
+                                    <p>perform tasks of Warehouse management Processes.</p>
+                                    <p>Framework: .Net MVC</p>
+                                    <p>Language: C#</p>
+                                    <p>Modular: Asp.net MVC</p>
+                                    <p>Backend: SQL Server 2014, Oracle 11g</p>
+                                    <p>Development Duration: Apr 2022 - Apr 2022</p>
+                                </div>
+                            </div>
+                        </details>
+                    </article>
+
+                    <article class="card project">
+                        <header>
+                            <h3>Console Auto Generation of Reports / Auto Emails / Auto API Calls</h3>
+                        </header>
+                        <details class="project-details">
+                            <summary>
+                                <span data-en="Show details" data-ar="عرض التفاصيل">Show details</span><span class="chev">⌄</span>
+                            </summary>
+                            <div class="detail-body">
+                                <div class='seg'>
+                                    <p>
+                                        Console Apps for Auto Generation of Reports by querying in Database and automatically based on
+                                        scheduled times and sending Emails automatically to the members, which are defined in DB, and
+                                        perform the pre-defined task of API, etc...
+                                    </p>
+                                    <p>Framework: .Net Core</p>
+                                    <p>Language: C#</p>
+                                    <p>Modular: Console</p>
+                                    <p>Backend: SQL Server 2014, Oracle 11g</p>
+                                    <p>Development Duration: Jan 2022 - Jan 2022</p>
+                                    <p>Console Applications to gather data from each POS Machine from 144 stores (144 Databases) in 6</p>
+                                    <p>Different Countries and store in Enterprise Databases.</p>
+                                    <p>Framework: .Net Core</p>
+                                    <p>Language: C#</p>
+                                    <p>Modular: Console</p>
+                                    <p>Backend: SQL Server 2014, Oracle 11g</p>
+                                    <p>Development Duration: Jan 2021 - Mar 2021</p>
+                                </div>
+                            </div>
+                        </details>
+                    </article>
+
+                    <article class="card project">
+                        <header>
+                            <h3>Data Processing/ Data Mover</h3>
+                        </header>
+                        <details class="project-details">
+                            <summary>
+                                <span data-en="Show details" data-ar="عرض التفاصيل">Show details</span><span class="chev">⌄</span>
+                            </summary>
+                            <div class="detail-body">
+                                <p>
+                                    Console Applications to gather data from each POS Machine from 144 stores (144 Databases) in 6
+                                    Different Countries and store in Enterprise Databases
+                                </p>
+                                <li><strong>Framework:</strong> .NET Core</li>
+                                <li><strong>Language:</strong> C#</li>
+                                <li><strong>Modular:</strong> Console</li>
+                                <li><strong>Backend:</strong> SQL Server 2014, Oracle 11g</li>
+                                <li><strong>Development Duration:</strong> Jan 2021 – Mar 2021</li>
+                            </div>
+                        </details>
+                    </article>
+
+                    <article class="card project">
+                        <header>
+                            <h3>Attendance Management &amp; Payroll Management System</h3>
+                        </header>
+                        <details class="project-details">
+                            <summary>
+                                <span data-en="Show details" data-ar="عرض التفاصيل">Show details</span><span class="chev">⌄</span>
+                            </summary>
+                            <div class="detail-body">
+                                <div class='seg'>
+                                    <p>Managing attendance of each employee using biometric device of zkteco and processing data to</p>
+                                    <p>
+                                        Manage and track the in and out of an employee in the office premises and generate the salaries
+                                        based on the available processed data collected by the biometric device by calculating salary of
+                                        each employee with permissions allowed for late, Late comings, early leaving, day off, absent,
+                                        public holidays, OT, bonus based on number of working hours etc....
+                                    </p>
+                                    <p>Framework: .Net Core</p>
+                                    <p>Language: C#</p>
+                                    <p>Modular: Asp.net Core/ MVC</p>
+                                    <p>Frontend: Html, CSS, Bootstrap, JavaScript</p>
+                                    <p>Backend: SQL Server 2014</p>
+                                    <p>Development Duration: Dec 2022 - March 2023</p>
+                                </div>
+                            </div>
+                        </details>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+        <section id="resume" class="section reveal">
+            <div class="container">
+                <h2>Resume</h2>
+                <p>
+                    <a class="btn small" href="assets/Ashraf_CV.pdf" download="Ashraf_Ali_Shaik_Senior_Net_Developer_CV.pdf">
+                        Download CV (PDF)
+                    </a>
+                    <a class="btn small ghost" href="assets/Ashraf_CV.pdf" target="_blank" rel="noopener">
+                        Open in new tab
+                    </a>
+                </p>
+
+                <div class="cv-viewer">
+
+                    <iframe class="pdf-frame" src="assets/Ashraf_CV.pdf#toolbar=1" title="Ashraf Ali Shaik — Resume PDF">
+                    </iframe>
+
+
+                </div>
+            </div>
+        </section>
+
+        <section id="documents" class="section reveal">
+            <div class="container">
+                <h2>Documents / Certifications</h2>
+
+                <div class="docs-grid">
+                    <article class="doc-card">
+                        <div class="doc-icon" aria-hidden="true">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor"
+                                      opacity=".9" />
+                                <path d="M14 2v6h6" stroke="currentColor" opacity=".9" />
+                            </svg>
+                        </div>
+                        <div class="doc-meta">
+                            <h3 class="doc-title">Resume (PDF)</h3>
+                            <p class="doc-desc">Latest CV in PDF format</p>
+                            <div class="doc-actions">
+                                <a class="btn small" href="assets/Ashraf_CV.pdf" download>Download</a>
+                                <a class="btn small ghost" href="assets/Ashraf_CV.pdf" target="_blank" rel="noopener">Preview</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="doc-card">
+                        <div class="doc-icon" aria-hidden="true">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor"
+                                      opacity=".9" />
+                                <path d="M14 2v6h6" stroke="currentColor" opacity=".9" />
+                            </svg>
+                        </div>
+                        <div class="doc-meta">
+                            <h3 class="doc-title">Armada Experience Certificate</h3>
+                            <p class="doc-desc">PDF document</p>
+                            <div class="doc-actions">
+                                <a class="btn small" href="assets/Armada%20Experience%20Certificate.pdf" download>Download</a>
+                                <a class="btn small ghost" href="assets/Armada%20Experience%20Certificate.pdf" target="_blank"
+                                   rel="noopener">Preview</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="doc-card">
+                        <div class="doc-icon" aria-hidden="true">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor"
+                                      opacity=".9" />
+                                <path d="M14 2v6h6" stroke="currentColor" opacity=".9" />
+                            </svg>
+                        </div>
+                        <div class="doc-meta">
+                            <h3 class="doc-title">ASP.NET Core 6.0 Certificate</h3>
+                            <p class="doc-desc">Professional certification (PDF)</p>
+                            <div class="doc-actions">
+                                <a class="btn small" href="assets/ASP%20Dot%20Net%20Core%206.0%20Certificate.pdf" download>Download</a>
+                                <a class="btn small ghost" href="assets/ASP%20Dot%20Net%20Core%206.0%20Certificate.pdf" target="_blank"
+                                   rel="noopener">Preview</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="doc-card">
+                        <div class="doc-icon" aria-hidden="true">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor"
+                                      opacity=".9" />
+                                <path d="M14 2v6h6" stroke="currentColor" opacity=".9" />
+                            </svg>
+                        </div>
+                        <div class="doc-meta">
+                            <h3 class="doc-title">CAMS Microsoft Certificate</h3>
+                            <p class="doc-desc">Training certificate (PDF)</p>
+                            <div class="doc-actions">
+                                <a class="btn small" href="assets/Cams%20Microsoft%20Certificate.pdf" download>Download</a>
+                                <a class="btn small ghost" href="assets/Cams%20Microsoft%20Certificate.pdf" target="_blank"
+                                   rel="noopener">Preview</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="doc-card">
+                        <div class="doc-icon" aria-hidden="true">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor"
+                                      opacity=".9" />
+                                <path d="M14 2v6h6" stroke="currentColor" opacity=".9" />
+                            </svg>
+                        </div>
+                        <div class="doc-meta">
+                            <h3 class="doc-title">DPS Appreciation</h3>
+                            <p class="doc-desc">Appreciation letter (PDF)</p>
+                            <div class="doc-actions">
+                                <a class="btn small" href="assets/DPS-Appreciation.pdf" download>Download</a>
+                                <a class="btn small ghost" href="assets/DPS-Appreciation.pdf" target="_blank" rel="noopener">Preview</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="doc-card">
+                        <div class="doc-icon" aria-hidden="true">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor"
+                                      opacity=".9" />
+                                <path d="M14 2v6h6" stroke="currentColor" opacity=".9" />
+                            </svg>
+                        </div>
+                        <div class="doc-meta">
+                            <h3 class="doc-title">Migration Certificate</h3>
+                            <p class="doc-desc">PDF document</p>
+                            <div class="doc-actions">
+                                <a class="btn small" href="assets/Migration%20Certificate.pdf" download>Download</a>
+                                <a class="btn small ghost" href="assets/Migration%20Certificate.pdf" target="_blank"
+                                   rel="noopener">Preview</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="doc-card">
+                        <div class="doc-icon" aria-hidden="true">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor"
+                                      opacity=".9" />
+                                <path d="M14 2v6h6" stroke="currentColor" opacity=".9" />
+                            </svg>
+                        </div>
+                        <div class="doc-meta">
+                            <h3 class="doc-title">SSC Certificate</h3>
+                            <p class="doc-desc">PDF document</p>
+                            <div class="doc-actions">
+                                <a class="btn small" href="assets/SSC%20Certificate.pdf" download>Download</a>
+                                <a class="btn small ghost" href="assets/SSC%20Certificate.pdf" target="_blank"
+                                   rel="noopener">Preview</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- <article class="doc-card">
+                      <div class="doc-icon" aria-hidden="true">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor"
+                            opacity=".9" />
+                          <path d="M14 2v6h6" stroke="currentColor" opacity=".9" />
+                        </svg>
+                      </div>
+                      <div class="doc-meta">
+                        <h3 class="doc-title">Work Permit</h3>
+                        <p class="doc-desc">PDF document</p>
+                        <div class="doc-actions">
+                          <a class="btn small" href="assets/Work%20Permit.pdf" download>Download</a>
+                          <a class="btn small ghost" href="assets/Work%20Permit.pdf" target="_blank" rel="noopener">Preview</a>
+                        </div>
+                      </div>
+                    </article> -->
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section reveal">
+            <div class="container grid-2">
+                <div>
+                    <h2>Contact</h2>
+                    <ul class="contact-list">
+                        <li>
+                            <strong>Email</strong>: <a href="mailto:ashrafaliannu@gmail.com"
+                                                       style="color: #0ea5e9;">ashrafaliannu@gmail.com</a>
+                        </li>
+                        <li>
+                            <strong>Phone / WhatsApp</strong>: <a href="tel:+965-50325941" style="color: #0ea5e9;">+965-50325941</a>
+                        </li>
+                        <li><strong>Location</strong>: Farwaniya, Kuwait</li>
+                    </ul>
+                </div>
+                <aside class="card">
+                    <h3>Note</h3>
+                    <p>Available for full-time roles and select freelance engagements.</p>
+                </aside>
+            </div>
+        </section>
+
+        <section id="LinkedinPost" class="section alt reveal">
+            <div class="container">
+                <h2>My LinkedIn Posts</h2>
+
+                <div class="linkedin-posts">
+                    <div class="linkedin-post">
+                        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7414820454454239232"
+                                title="Why Microsoft KILLED System.Web 😱 ??? "
+                                loading="lazy">
+                        </iframe>
+                    </div>
+
+                    <div class="linkedin-post">
+                        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7414844981611458560"
+                                title="SignalR in 2026: Real-Time Apps in Minutes"
+                                loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2025 Ashraf. All rights reserved.</p>
+            <a href="#hero" class="back-to-top" aria-label="Back to top">↑</a>
         </div>
-      </div>
-    </section>
 
-    <section id="projects" class="section reveal">
-      <div class="container">
-        <h2>Projects</h2>
-        <div class="projects-toolbar">
-          <div class="filterbar card">
-            <input id="project-search" type="search" placeholder="Search projects…" aria-label="Search projects">
-          </div>
-          <div class="expanders">
-            <button class="pill" id="expandAll">Expand all</button>
-            <button class="pill" id="collapseAll">Collapse all</button>
-          </div>
-        </div>
-        <div class="projects-grid">
-          <article class="card project">
-            <header>
-              <h3>TeltraOne ERP</h3>
-            </header>
-            <details class="project-details">
-              <summary><span data-en="Show details" data-ar="عرض التفاصيل">Show details</span><span
-                  class="chev">⌄</span></summary>
-              <div class="detail-body">
-                <!-- <p><strong>Jul 2025 | Kuwait</strong></p> -->
-                <p><strong>Project Summary (short):</strong></p>
-                <p>Multi-company ERP for SMEs with strict data governance (CompanyID on every table, audit fields,
-                  RowVersion) and EN/AR bilingual readiness. The platform delivers end-to-end back-office workflows with
-                  clean REST APIs for mobile/partner integrations, internal messaging, real-time notifications, AI
-                  “read-style” digests, and event-driven auto-emails. Every screen and option is controlled by dynamic,
-                  role-based permissions; each module has its own dashboard, and Owner/Executive roles see advanced
-                  cross-module analytics that combine all dashboards.</p>
-                <p><strong>Tech Used (full):</strong></p>
-                <ol class="dense">
-                  <li><strong>Backend:</strong> C# 10, ASP.NET Core 6 (MVC + Web API), ASP.NET Identity (cookie for MVC;
-                    JWT for APIs), SignalR (real-time), Hosted Services/BackgroundService (jobs),
-                    FluentValidation/DataAnnotations, configuration via appsettings.</li>
-                  <li><strong>Data:</strong> SQL Server 2019/2022 (v15+), Dapper (primary) + EF Core (where tracking is
-                    needed), parameterized Stored Procedures, Transactions/Isolation Levels, RowVersion concurrency,
-                    composite indexes, DB seeders.</li>
-                  <li><strong>Front-end:</strong> Razor Views, Bootstrap 4, jQuery, unobtrusive validation, partial
-                    views/layouts, EN/AR localization wrappers.</li>
-                  <li><strong>Security & Governance:</strong> Multi-company tenancy (CompanyID everywhere), granular
-                    RBAC down to page/section/button (view/create/edit/delete/export/approve), anti-forgery tokens,
-                    input validation, parameterized SQL, full audit trails (Created/Updated/Deleted, by/at), secure file
-                    ACLs.</li>
-                  <li><strong>Integrations:</strong> MyFatoorah, Instagram, Twitter, WhatsApp, Allowmena shipping,
-                    push-to-talk APIs, GPS tracking, ZKTeco biometric, DVR/RTSP live streams.</li>
-                  <li><strong>Ops/Hosting:</strong> IIS 10, Web Deploy, env-based configs, health checks, structured
-                    logging, resilient retries.</li>
-                  <li><strong>UX/Utilities:</strong> CSV/Excel export, number series/formatting, bilingual labels/data.
-                  </li>
-                  <li><strong>Messaging, Notifications & Auto-Emails:</strong>
-                    <ol class="dense">
-                      <li><strong>Internal Messaging:</strong> Outlook-style inbox (To/Cc), threads, attachments,
-                        watchers, read receipts, job/request linking.</li>
-                      <li><strong>Real-Time Notifications:</strong> SignalR toasts + in-app inbox with per-user
-                        read/unread, mute/snooze, granular events.</li>
-                      <li><strong>AI “Read-Style” Digests:</strong> Background jobs condense raw events into readable
-                        summaries.</li>
-                      <li><strong>Auto-Emails:</strong> DB templates, event triggers, queued dispatch with retry/backoff
-                        + audit copies.</li>
-                    </ol>
-                  </li>
-                </ol>
-                <p><strong>Modules (full list with one-line summaries)</strong></p>
-                <li>Company &amp; Tenant Admin — Multi-company/ Multi-Tenant setup with Company on every table and
-                  scoped data access.</li>
-                <li>Users, Roles &amp; Menu Permissions — Dynamic per-screen/per-action RBAC
-                  (view/create/edit/delete/export/approve).</li>
-                <li>Localization (EN/AR) — Bilingual UI and data columns; switchable labels and formats.</li>
-                <li>Audit &amp; Compliance — Who/when/what for every change; RowVersion for optimistic concurrency.</li>
-                <li>System Settings &amp; Masters — Centralized master data, numbering schemes, configuration.</li>
-                <li>Email Templates — DB-driven templates powering event-based auto-emails.</li>
-                <li>Notification Center — Real-time SignalR alerts with in-app inbox and read/unread state.</li>
-                <li>Internal Messaging — Threaded messages, To/Cc, attachments, watchers, read receipts.</li>
-                <li>Shared Directory/ Document Management — Reading IO system Folder tree with company/role/user ACLs,
-                  previews, and full audit log.</li>
-                <li>Reports &amp; Analytics — Operational/finance reports with drill-downs and exports.</li>
-                <li>Module Dashboards — Each module exposes KPIs/queues tailored to its workflow.</li>
-                <li>Owner/Executive Analytics — Cross-module KPIs combining all dashboards for leadership.</li>
-                <li>Public API Layer — REST endpoints for mobile apps/partners with JWT scopes and rate-limits.</li>
-                <li>Integration Hub — Connectors for payments, shipping, social, comms, biometrics, GPS, DVR.</li>
-                <li>Commercial, Operations &amp; HR</li>
-                <li>Presales &amp; CRM — Clients/sub-clients, opportunities, follow-ups, quotations.</li>
-                <li>Projects &amp; Tasks — Projects, milestones, assignments, time notes, progress views.</li>
-                <li>Procurement — PR → RFQ → Quotation → PO → GRN → Bill → Payment with approvals.</li>
-                <li>Vendor Management — Onboarding, contracts, KPIs/scorecards, compliance docs.</li>
-                <li>Inventory &amp; Warehouses — Multi-warehouse stock, transfers, optional serial/IMEI tracking.</li>
-                <li>Sales &amp; Billing — Quotes → invoices, receipts, VAT/tax handling, payment reconciliation.</li>
-                <li>Accounts (General Ledger) — Ledger, trial balance, P&amp;L, balance sheet, cash in/out, expenses;
-                  auto-postings from procurement &amp; sales.</li>
-                <li>HR &amp; Payroll — Employees, allowances/deductions, attendance, OT/late rules, black points.</li>
-                <li>Attendance &amp; Shifts — Shift rosters, exceptions; ZKTeco biometric ingestion into payroll.</li>
-                <li>Ticketing &amp; Helpdesk — Issue intake, categories, SLAs, comments, attachments.</li>
-                <li>Secretary/Agenda — Tasks, reminders, meeting notes, follow-up prompts.</li>
-                <li>Court Case Management — Cases, hearings, documents, statutory deadlines &amp; reminders.</li>
-                <li>Document &amp; Template Center — Standard letters/forms with placeholders and versioning.</li>
-                <li>Dashcams &amp; CCTV (DVR) — Live streaming from DVR/RTSP feeds into secured in-app viewers.</li>
-                <li>Logistics, Social &amp; Comms Integrations</li>
-                <li>Payments (MyFatoorah) — Online payments with webhook callbacks and receipt logging.</li>
-                <li>Shipping (Allowmena) — Shipment order creation, status tracking, and label retrieval.</li>
-                <li>Instagram (Multi-Account) — Post/retrieve content/insights for multiple business accounts.</li>
-                <li>Twitter (X) Integration — Publishing and engagement metrics where applicable.</li>
-                <li>WhatsApp (Multi-Account) — Template messaging, inbound routing, and conversation audit.</li>
-                <li>Push-to-Talk (Walkie-Talkie) — Auto enable/disable services based on payment status.</li>
-                <li>GPS Tracking APIs — Auto enable/disable GPS-based services by subscription/payment.</li>
-              </div>
-              <!-- </div> -->
-            </details>
-          </article>
+    </footer>
 
-          <article class="card project">
-            <header>
-              <h3>Kuwait Public Transport Company <strong>(KPTC)</strong></h3>
-            </header>
-            <details class="project-details">
-              <summary><span data-en="Show details" data-ar="عرض التفاصيل">Show details</span><span
-                  class="chev">⌄</span></summary>
-              <div class="detail-body">
-                <div class='seg'>
-                  <strong>Lead / Project Manager / .NET Developer (Contract)</strong> <br>
-                   <strong>Garage Management System</strong>                
-                   <p><strong>Project Summary:</strong> A fully digital enterprise-grade system for KPTC to manage its garages,
-                     workshops, and field operations. Covers vehicle maintenance, inspections, violation handling, 
-                     recovery/winch dispatch, and sticker operations, with role-based access, auditability, and analytics.</p>
-                   <p>Built scalable REST APIs and a React frontend for back-office staff and field teams, 
-                    ensuring secure data flows, robust logging, and efficient long-running reports.</p>        
-                   <ul>
-                <li>Entire Garage Management System Modules:</li>
-                <ul>
-                  <li>Vehicle & Workshop Management – track repairs, maintenance history, and inventory</li>
-                  <li>Violation Handling – record and manage vehicle or driver violations</li>
-                  <li>Recovery / Winch Dispatch – assign drivers, track status: Pending → Assigned → Completed</li>
-                  <li>Sticker Operations – issuance, renewals, compliance tracking, and audit logs</li>
-                  <li>Role-Based Access & Auditability – segregated duties and full action tracking</li>
-                  <li>Reporting & Analytics – operational KPIs, maintenance history, and fleet performance dashboards</li>
-                  <li>Field Operations Integration – real-time mobile updates, secure API sync</li>
-                  <li>And Many More</li>
-                </ul>
-              </ul>
-                </div>
-              </div>
-            </details>
-          </article>
-
-          <article class="card project">
-            <header>
-              <h3>Warba Insurance – Border Gate Application</h3>
-            </header>
-            <details class="project-details">
-              <summary><span data-en="Show details" data-ar="عرض التفاصيل">Show details</span><span
-                  class="chev">⌄</span></summary>
-              <div class="detail-body">
-                <div class='seg'>
-                  <p>Warba Insurance – Border Gate Application (Used at Kuwait Borders “Nuwaiseeb”, “Abdali”, “Salmi”)
-                  </p>
-                  <p>Description: Developed a border gate application for Insurance Policy Issuance with ANPR cameras,
-                    OCR devices, and multiple system integrations for vehicle entry processing.</p>
-                  <p>Framework: .Net Core</p>
-                  <p>Language: C#</p>
-                  <p>Frontend: Bootstrap, HTML, CSS, JavaScript, jQuery</p>
-                  <p>Backend: SQL Server 2019</p>
-                </div>
-              </div>
-            </details>
-          </article>
-
-          <article class="card project">
-            <header>
-              <h3>Warba Insurance – Web Portal &amp; Mobile Application APIs</h3>
-            </header>
-            <details class="project-details">
-              <summary><span data-en="Show details" data-ar="عرض التفاصيل">Show details</span><span
-                  class="chev">⌄</span></summary>
-              <div class="detail-body">
-                <div class='seg'>
-                  <p>Designed and implemented APIs for motor policy purchases via web and mobile
-                    applications.</p>
-                  <p>Development of WebPortal</p>
-                  <p>Framework: .Net Core</p>
-                  <p>Language: C#</p>
-                  <p>Frontend: Bootstrap, HTML, CSS, JavaScript, jQuery</p>
-                  <p>Backend: SQL Server 2019</p>
-                </div>
-              </div>
-            </details>
-          </article>
-
-          <article class="card project">
-            <header>
-              <h3>Warba Insurance (Integrations)</h3>
-            </header>
-            <details class="project-details">
-              <summary><span data-en="Show details" data-ar="عرض التفاصيل">Show details</span><span
-                  class="chev">⌄</span></summary>
-              <div class="detail-body">
-                <div class='seg'>
-                  <p>Data Integration: Integrated Warba’s core system (First Apex) with external data sources.</p>
-                  <p>Automation &amp; Reporting: Developed auto email and auto reports generation systems.</p>
-                  <p>API Integrations: Implemented WhatsApp API integration with Octopus APIs.</p>
-                  <p>Payment Gateway Integrations:</p>
-                  <p>Integrated CyberSource for Visa &amp; MasterCard payments.</p>
-                  <p>Integrated KNET payment gateway for seamless transactions.</p>
-                  <p>Integrated POS Terminal(Hardware - verifone P400) with System for seamless transactions.</p>
-                </div>
-              </div>
-            </details>
-          </article>
-
-          <article class="card project">
-            <header>
-              <h3>Ministry of Finance (MOF) – Kuwait Tax Certification System TCRS Tax Certification Request system</h3>
-            </header>
-            <details class="project-details">
-              <summary><span data-en="Show details" data-ar="عرض التفاصيل">Show details</span><span
-                  class="chev">⌄</span></summary>
-              <div class="detail-body">
-                <div class='seg'>
-                  <p>• Project Overview: Developed a public portal for applicants and an admin panel for back-office
-                    operations.</p>
-                  <p>Framework: ASP.NET MVC</p>
-                  <p>Language: C#</p>
-                  <p>Frontend: Bootstrap, HTML, CSS, Angular JS</p>
-                  <p>Backend: SQL Server • Integrations:</p>
-                  <p>MOFA (Ministry of Foreign Affairs) integration</p>
-                  <p>Sahel App integration</p>
-                  <p>Mobile ID authentication</p>
-                  <p>Tasdeed Payment Gateway for online transactions</p>
-                  <p>MOI APIs Integration for checking resident stay in Kuwait and verifying their identity</p>
-                  <p>GoSign (Digital Signature) integration for secure document signing</p>
-                  <p>SQL-based Core System (KITAS) integration for data exchange</p>
-                </div>
-              </div>
-            </details>
-          </article>
-
-          <article class="card project">
-            <header>
-              <h3>Kuwait Capital Market Authority (CMA) – Budgeting System</h3>
-            </header>
-            <details class="project-details">
-              <summary><span data-en="Show details" data-ar="عرض التفاصيل">Show details</span><span
-                  class="chev">⌄</span></summary>
-              <div class="detail-body">
-                <div class='seg'>
-                  <p>Project Overview: Developed a comprehensive budgeting system for CMA to manage and allocate budgets
-                    for all ministries in Kuwait, including employee salaries and financial planning based on predefined
-                    rules.</p>
-                  <p>Framework: ASP.NET MVC5</p>
-                  <p>Language: C#</p>
-                  <p>Frontend: Bootstrap, HTML, CSS, JavaScript, jQuery, Telerik Kendo</p>
-                  <p>Backend: SQL Server</p>
-                  <p>• Key Features:</p>
-                  <p>Salary calculations based on employee positions and different rules for Kuwaiti and non-Kuwaiti
-                    employees.</p>
-                  <p>Budget allocation in chapters for the entire fiscal year.</p>
-                  <p>Multiple budget categories for detailed financial planning.</p>
-                  <p>Multiple Integrations with many Ministry APIs for salary Budget Closure</p>
-            </details>
-          </article>
-
-          <article class="card project">
-            <header>
-              <h3>Kuwait Fund Disbursement Application (Loans, Grands &amp; Claims Management System)</h3>
-            </header>
-            <details class="project-details">
-              <summary><span data-en="Show details" data-ar="عرض التفاصيل">Show details</span><span
-                  class="chev">⌄</span></summary>
-              <div class="detail-body">
-                <div class='seg'>
-                  <p>The Kuwait Fund Disbursement Application is a robust and secure digital platform designed to manage
-                    the complete lifecycle of loans, grants, and claims, repayments, interest used by the Kuwait Fund.
-                    The system automates the application, approval, disbursement, and repayment processes, ensuring
-                    transparency and efficiency in fund distribution and recollections.</p>
-                  <p>Framework: .Net MVC5</p>
-                  <p>Language: C#</p>
-                  <p>Frontend: Bootstrap, HTML, CSS, JavaScript, jQuery, Telerik Kendo</p>
-                  <p>Backend: Oracle 19c</p>
-                </div>
-              </div>
-            </details>
-          </article>
-
-          <article class="card project">
-            <header>
-              <h3>WMS (Warehouse Management System)</h3>
-            </header>
-            <details class="project-details">
-              <summary><span data-en="Show details" data-ar="عرض التفاصيل">Show details</span><span
-                  class="chev">⌄</span></summary>
-              <div class="detail-body">
-                <div class='seg'>
-                  <p>A Complete Warehouse Management System which is a comprehensive and integrated solution designed to
-                    streamline warehouse operations by combining online order management, inventory control, bin
-                    location tracking, and handheld device integration. This system enhances warehouse efficiency,
-                    accuracy, and real-time inventory management, ensuring seamless order fulfillment and replenishment.
-                  </p>
-                  <p>Framework: .Net Core</p>
-                  <p>Language: C#</p>
-                  <p>Frontend: Bootstrap, HTML, CSS, JavaScript</p>
-                  <p>Backend: SQL Server 2014</p>
-                  <p>Development Duration: Dec 2018 - Feb 2019</p>
-                </div>
-              </div>
-            </details>
-          </article>
-
-          <article class="card project">
-            <header>
-              <h3>Windows POS (Point of Sale System)</h3>
-            </header>
-            <details class="project-details">
-              <summary><span data-en="Show details" data-ar="عرض التفاصيل">Show details</span><span
-                  class="chev">⌄</span></summary>
-              <div class="detail-body">
-                <div class='seg'>
-                  <p>Complete POS (Point of Sale System) based on Windows Forms platform.</p>
-                  <p>Framework: .Net Core</p>
-                  <p>Language: C#</p>
-                  <p>Frontend: Windows</p>
-                  <p>Backend: SQL Server 2014</p>
-                  <p>Development Duration: Jan 2019 - Jan 2019</p>
-                </div>
-              </div>
-            </details>
-          </article>
-
-          <article class="card project">
-            <header>
-              <h3>Instagram API Integration</h3>
-            </header>
-            <details class="project-details">
-              <summary><span data-en="Show details" data-ar="عرض التفاصيل">Show details</span><span
-                  class="chev">⌄</span></summary>
-              <div class="detail-body">
-                <div class='seg'>
-                  <p>Application to Upload Multiple Photos and Videos to Instagram with data like its content, price,
-                    information,</p>
-                  <p>etc.... As we cannot upload any media from a computer in Instagram so the application will use
-                    Instagram</p>
-                  <p>API, integrate data to our Instagram account, and create a post on Instagram with professional APIs
-                    of Instagram.</p>
-                  <p>(For Businesses who use Instagram / social media app platforms as their means to sell)</p>
-                  <p>Framework: .Net Core</p>
-                  <p>Language: C#</p>
-                  <p>Development Duration: Jan 2020 - Jan 2020</p>
-                  <p>Modular: Windows</p>
-                  <p>APIs: Instagram Authentication &amp; Post Creation</p>
-                </div>
-              </div>
-            </details>
-          </article>
-
-          <article class="card project">
-            <header>
-              <h3>Salary Distribution Web App</h3>
-            </header>
-            <details class="project-details">
-              <summary><span data-en="Show details" data-ar="عرض التفاصيل">Show details</span><span
-                  class="chev">⌄</span></summary>
-              <div class="detail-body">
-                <div class='seg'>
-                  <p>This is a salary distribution application, that helps in distributing salaries by capturing the
-                    digital signature of the receiver while the salary is paid.</p>
-                  <p>It can be used in multiple environments such as when a company is a single or a group of companies
-                    or when a company has multiple offices, and the salary is to be paid in CASH or CHEQUE etc....</p>
-                  <p>The application will store all data into its database and the data will be used to generate N&#x27;
-                    numbers of multiple category reports, dashboards, and details checking facilities and many more....
-                  </p>
-                  <p>As the application has the menu access system, which will allow us to give access for the required
-                    menus to a particular employee as per the position and the work process of an employee...</p>
-                  <p>The application has modules for :</p>
-                  <p>Modules & Reports</p>
-                  <li>User Creation
-                  <li>
-                  <li>Salary Paid Report
-                  <li>
-                  <li>Menu Access Based on User
-                  <li>
-                  <li>Salary Unpaid Report
-                  <li>
-                  <li>Payment Of Salaries to The Employee
-                  <li>
-                  <li>Partial Paid Salary Report
-                  <li>
-                  <li>Integration Between a Digital Signature Pad
-                  <li>
-                  <li>Payment By Supervisor
-                  <li>
-                  <li>Capture Live Signature
-                  <li>
-                  <li>Amount Issued for Payment Of Salaries
-                  <li>
-                  <li>Paid, Unpaid, Partial Paid Enquiry Checking
-                  <li>
-                  <li>Amount Paid
-                  <li>
-                  <li>Attendance Biometrics Integration
-                  <li>
-                  <li>Amount Pending
-                  <li>
-                  <li>Attendance Query
-                  <li>
-                  <li>Year Wise
-                  <li>
-                  <li>Official Off Management
-                  <li>
-                  <li>Month Wise
-                  <li>
-                  <li>Salary Calculation Screen
-                  <li>
-                  <li>Week Wise
-                  <li>
-                  <li>Late Permission Screen
-                  <li>
-                  <li>Day Wise
-                  <li>
-                  <li>Annual Leave Management Screen
-                  <li>
-                  <li>All Attendance and Employee Reports
-                  <li>
-                  <li>And Many More Modules, Reports and Crud Operations
-                  <li>
-                    <p>Framework: .Net</p>
-                    <p>Language: C#</p>
-                    <p>Modular: Asp.net MVC</p>
-                    <p>Frontend: HTML, Bootstrap, CSS, JavaScript</p>
-                    <p>Backend: SQL Server 2014</p>
-                    <p>Development Duration: Nov 2021 - Jan 2022</p>
-                </div>
-              </div>
-            </details>
-          </article>
-
-          <article class="card project">
-            <header>
-              <h3>Delivery order Placing Website + Admin Panel and Order Processing System</h3>
-            </header>
-            <details class="project-details">
-              <summary><span data-en="Show details" data-ar="عرض التفاصيل">Show details</span><span
-                  class="chev">⌄</span></summary>
-              <div class="detail-body">
-                <div class='seg'>
-                  <p>A website for customers to place delivery orders as the company was providing delivery service.</p>
-                  <p>An Admin for the Company Staff, which has the modules for Order Processing, Shipping, Delivery and
-                    store management...</p>
-                  <p>Framework: .Net MVC</p>
-                  <p>Language: C#</p>
-                  <p>Modular: Asp.Net MVC</p>
-                  <p>Frontend: Html, CSS, Bootstrap, JavaScript</p>
-                  <p>Backend: SQL Server 2014</p>
-                  <p>Development Duration: Jan 2020 - Jan 2020</p>
-                </div>
-              </div>
-            </details>
-          </article>
-
-          <article class="card project">
-            <header>
-              <h3>Vehicle, Delivery, Employee &amp; Payroll Management System</h3>
-            </header>
-            <details class="project-details">
-              <summary><span data-en="Show details" data-ar="عرض التفاصيل">Show details</span><span
-                  class="chev">⌄</span></summary>
-              <div class="detail-body">
-                <div class='seg'>
-                  <p>A Windows Based Application for Bobyan International Company Which includes:</p>
-                  <p>Vehicle Management</p>
-                  <p>Delivery management System</p>
-                  <p>Employee management System</p>
-                  <p>Payroll Management System.</p>
-                  <p>This all-in-one application/software was developed as per the company&#x27;s requirements...</p>
-                  <p>Framework: .Net Core</p>
-                  <p>Language: C#</p>
-                  <p>Modular: Windows</p>
-                  <p>Backend: SQL Server 2014</p>
-                  <p>Development Duration: Sep 2018 - Jan 2019</p>
-                </div>
-              </div>
-            </details>
-          </article>
-
-          <article class="card project">
-            <header>
-              <h3>WMS with RFID (Radio Frequency Identification) Technology</h3>
-            </header>
-            <details class="project-details">
-              <summary><span data-en="Show details" data-ar="عرض التفاصيل">Show details</span><span
-                  class="chev">⌄</span></summary>
-              <div class="detail-body">
-                <div class='seg'>
-                  <p>Warehouse management system with RFID Cane &amp; Impinj devices with programmed and Printed RFID
-                    antenna labels</p>
-                  <p>Framework: .Net MVC</p>
-                  <p>Language: C#</p>
-                  <p>Modular: Asp.Net MVC</p>
-                  <p>Frontend: Html, CSS, Bootstrap, JavaScript</p>
-                  <p>Backend: SQL Server 2012</p>
-                  <p>Development Duration: Jan 2020 - Feb 2020</p>
-                  <p>Web Services</p>
-                  <p>Web Services to Operate a Delivery Management Android Application, interact and integrate to
-                    database using the Web Services Developed and hosted in the company&#x27;s internal network.</p>
-                  <p>Framework: .Net Core</p>
-                  <p>Language: C#</p>
-                  <p>Backend: Oracle 11g</p>
-                  <p>Development Duration: Jan 2020 - Feb 2020</p>
-                </div>
-              </div>
-            </details>
-          </article>
-
-          <article class="card project">
-            <header>
-              <h3>Ticket Raising System</h3>
-            </header>
-            <details class="project-details">
-              <summary><span data-en="Show details" data-ar="عرض التفاصيل">Show details</span><span
-                  class="chev">⌄</span></summary>
-              <div class="detail-body">
-                <div class='seg'>
-                  <p>To be used by Stores and Warehouses for Stores and Warehouses non-inventory transactions &amp;
-                    Stores Maintenance Issues which can be reported to the concerned department by raising an issue
-                    ticket.</p>
-                  <p>Framework: .Net MVC</p>
-                  <p>Language: C#</p>
-                  <p>Frontend: Html, CSS, JavaScript, Bootstrap</p>
-                  <p>Modular: Asp.net MVC</p>
-                  <p>Backend: SQL Server 2014</p>
-                  <p>Development Duration: Jan 2021 - Jan 2021</p>
-                </div>
-              </div>
-            </details>
-          </article>
-
-          <article class="card project">
-            <header>
-              <h3>Software Modules Requesting App</h3>
-            </header>
-            <details class="project-details">
-              <summary><span data-en="Show details" data-ar="عرض التفاصيل">Show details</span><span
-                  class="chev">⌄</span></summary>
-              <div class="detail-body">
-                <div class='seg'>
-                  <p>Software Modules Requesting App is an application that allows all departments within the company to
-                    request any module in their company&#x27;s internal management application...</p>
-                  <p>there are a few steps for the approval of the request...</p>
-                  <p>The end user enters all his/ her requirements in the application will all media attached ...</p>
-                  <p>The request is forwarded to the end user&#x27;s Line Manager</p>
-                  <p>The Edit &amp; Approval Process</p>
-                  <p>Then The Request is forwarded to the GM or the Owner</p>
-                  <p>The Edit &amp; Approval Process</p>
-                  <p>Then The Request is forwarded to the Module Development Team</p>
-                  <p>The Edit &amp; Approval Process from the Development Team</p>
-                  <p>All Managers, owners, and the End User will be notified by the feedback of the development team.
-                  </p>
-                  <p>, which includes Delivery time, and many more details...</p>
-                  <p>Framework: .Net</p>
-                  <p>Language: C#</p>
-                  <p>Frontend: Html, CSS, Bootstrap, JavaScript</p>
-                  <p>Modular: Asp.net MVC</p>
-                  <p>Backend: SQL Server 2014</p>
-                  <p>Development Duration: Jan 2021 - Feb 2021</p>
-                </div>
-              </div>
-            </details>
-          </article>
-
-          <article class="card project">
-            <header>
-              <h3>Restful Web API for Ecommerce Website</h3>
-            </header>
-            <details class="project-details">
-              <summary><span data-en="Show details" data-ar="عرض التفاصيل">Show details</span><span
-                  class="chev">⌄</span></summary>
-              <div class="detail-body">
-                <div class='seg'>
-                  <p>Restful Web API for online order processing system (from order placed to order Shipping Processes)
-                    which includes all steps of processing an order from the warehouse or store.</p>
-                  <p>Framework: .Net</p>
-                  <p>Language: C#</p>
-                  <p>Modular: Asp.net MVC</p>
-                  <p>Backend: SQL Server 2014, Oracle 11g</p>
-                  <p>Development Duration: Feb 2022 - Mar 2022</p>
-                </div>
-              </div>
-            </details>
-          </article>
-
-          <article class="card project">
-            <header>
-              <h3>Restful Web API for Data Integration &amp; Interaction</h3>
-            </header>
-            <details class="project-details">
-              <summary><span data-en="Show details" data-ar="عرض التفاصيل">Show details</span><span
-                  class="chev">⌄</span></summary>
-              <div class="detail-body">
-                <div class='seg'>
-                  <p>Restful Web API for Data Integration between 7 different databases of SAP ERP System as there are 7
-                    databases which represent each database as each Company.</p>
-                  <p>API was made to interact between all 7 Databases with an ANDROID, IOS, or WEB Applications...</p>
-                  <p>Framework: .Net MVC</p>
-                  <p>Language: C#</p>
-                  <p>Modular: Asp.net MVC</p>
-                  <p>Backend: SQL Server 2014, Oracle 11g</p>
-                  <p>Development Duration: Jan 2020 - Apr 2020</p>
-                </div>
-              </div>
-            </details>
-          </article>
-
-          <article class="card project">
-            <header>
-              <h3>Dynamic Business Website</h3>
-            </header>
-            <details class="project-details">
-              <summary><span data-en="Show details" data-ar="عرض التفاصيل">Show details</span><span
-                  class="chev">⌄</span></summary>
-              <div class="detail-body">
-                <div class='seg'>
-                  <p>The business website made for Bobyan Delivery International is as dynamic as even the colors of
-                    websites are DB driven.</p>
-                  <p>Framework: .Net MVC</p>
-                  <p>Language: C#</p>
-                  <p>Modular: Asp.net MVC</p>
-                  <p>Backend: SQL Server 2014</p>
-                  <p>Development Duration: Jan 2021 - Jan 2021</p>
-                </div>
-              </div>
-            </details>
-          </article>
-
-          <article class="card project">
-            <header>
-              <h3>Data Integration Application</h3>
-            </header>
-            <details class="project-details">
-              <summary><span data-en="Show details" data-ar="عرض التفاصيل">Show details</span><span
-                  class="chev">⌄</span></summary>
-              <div class="detail-body">
-                <div class='seg'>
-                  <p>Data Integrations Using Consoles from any database from any platform to any database to any
-                    platform.</p>
-                  <p>, which will have queries passed as parameters to the application from the Database, which will
-                    move data continuously without any mistake and keep records of all performed tasks in the structure
-                    of Logs...</p>
-                  <p>Framework: .Net Core</p>
-                  <p>Language: C#</p>
-                  <p>Modular: Console</p>
-                  <p>Backend: SQL Server 2014, Oracle 11g</p>
-                  <p>Development Duration: Apr 2021 - May 2021</p>
-                </div>
-              </div>
-            </details>
-          </article>
-
-          <article class="card project">
-            <header>
-              <h3>All Purpose Office Management System</h3>
-            </header>
-            <details class="project-details">
-              <summary><span data-en="Show details" data-ar="عرض التفاصيل">Show details</span><span
-                  class="chev">⌄</span></summary>
-              <div class="detail-body">
-                <div class='seg'>
-                  <p>A common application for all departments of the company with different purposes according to
-                    department requirements.</p>
-                  <p>Framework: .Net MVC</p>
-                  <p>Language: C#</p>
-                  <p>Modular: Asp.net MVC</p>
-                  <p>Frontend: JavaScript, Html, CSS, Bootstrap</p>
-                  <p>Backend: SQL Server 2014, Oracle 11g</p>
-                  <p>Development Duration: Aug 2017 – Continuously Adding Modules</p>
-                </div>
-              </div>
-            </details>
-          </article>
-
-          <article class="card project">
-            <header>
-              <h3>Web POS (Point of Sale)</h3>
-            </header>
-            <details class="project-details">
-              <summary><span data-en="Show details" data-ar="عرض التفاصيل">Show details</span><span
-                  class="chev">⌄</span></summary>
-              <div class="detail-body">
-                <div class='seg'>
-                  <p>Point of Sale System for a Nursery in Kuwait with Facilities of Store, Product, Inventory, access,
-                    and many more modules of management, CRM Customer management and QR Code-based Information Providing
-                    to customers with their own Mobile&#x27;s Camera.</p>
-                  <p>Framework: .Net MVC</p>
-                  <p>Language: C#</p>
-                  <p>Modular: Asp.net MVC</p>
-                  <p>Frontend: Html, CSS, Bootstrap, JavaScript, jQuery</p>
-                  <p>Backend: SQL Server 2019</p>
-                  <p>Development Duration: Feb 2021 - May 2021</p>
-                </div>
-              </div>
-            </details>
-          </article>
-
-          <article class="card project">
-            <header>
-              <h3>Restful Web API for Android WMS System</h3>
-            </header>
-            <details class="project-details">
-              <summary><span data-en="Show details" data-ar="عرض التفاصيل">Show details</span><span
-                  class="chev">⌄</span></summary>
-              <div class="detail-body">
-                <div class='seg'>
-                  <p>which has all API methods that let’s an android application to Communicate/ interact with the
-                    database and</p>
-                  <p>perform tasks of Warehouse management Processes.</p>
-                  <p>Framework: .Net MVC</p>
-                  <p>Language: C#</p>
-                  <p>Modular: Asp.net MVC</p>
-                  <p>Backend: SQL Server 2014, Oracle 11g</p>
-                  <p>Development Duration: Apr 2022 - Apr 2022</p>
-                </div>
-              </div>
-            </details>
-          </article>
-
-          <article class="card project">
-            <header>
-              <h3>Console Auto Generation of Reports / Auto Emails / Auto API Calls</h3>
-            </header>
-            <details class="project-details">
-              <summary><span data-en="Show details" data-ar="عرض التفاصيل">Show details</span><span
-                  class="chev">⌄</span></summary>
-              <div class="detail-body">
-                <div class='seg'>
-                  <p>Console Apps for Auto Generation of Reports by querying in Database and automatically based on
-                    scheduled times and sending Emails automatically to the members, which are defined in DB, and
-                    perform the pre-defined task of API, etc...</p>
-                  <p>Framework: .Net Core</p>
-                  <p>Language: C#</p>
-                  <p>Modular: Console</p>
-                  <p>Backend: SQL Server 2014, Oracle 11g</p>
-                  <p>Development Duration: Jan 2022 - Jan 2022</p>
-                  <p>Console Applications to gather data from each POS Machine from 144 stores (144 Databases) in 6</p>
-                  <p>Different Countries and store in Enterprise Databases.</p>
-                  <p>Framework: .Net Core</p>
-                  <p>Language: C#</p>
-                  <p>Modular: Console</p>
-                  <p>Backend: SQL Server 2014, Oracle 11g</p>
-                  <p>Development Duration: Jan 2021 - Mar 2021</p>
-                </div>
-              </div>
-            </details>
-          </article>
-
-          <article class="card project">
-            <header>
-              <h3>Data Processing/ Data Mover</h3>
-            </header>
-            <details class="project-details">
-              <summary><span data-en="Show details" data-ar="عرض التفاصيل">Show details</span><span
-                  class="chev">⌄</span></summary>
-              <div class="detail-body">
-                <p>Console Applications to gather data from each POS Machine from 144 stores (144 Databases) in 6
-                  Different Countries and store in Enterprise Databases</p>
-                <li><strong>Framework:</strong> .NET Core</li>
-                <li><strong>Language:</strong> C#</li>
-                <li><strong>Modular:</strong> Console</li>
-                <li><strong>Backend:</strong> SQL Server 2014, Oracle 11g</li>
-                <li><strong>Development Duration:</strong> Jan 2021 – Mar 2021</li>
-              </div>
-            </details>
-          </article>
-
-          <article class="card project">
-            <header>
-              <h3>Attendance Management &amp; Payroll Management System</h3>
-            </header>
-            <details class="project-details">
-              <summary><span data-en="Show details" data-ar="عرض التفاصيل">Show details</span><span
-                  class="chev">⌄</span></summary>
-              <div class="detail-body">
-                <div class='seg'>
-                  <p>Managing attendance of each employee using biometric device of zkteco and processing data to</p>
-                  <p>Manage and track the in and out of an employee in the office premises and generate the salaries
-                    based on the available processed data collected by the biometric device by calculating salary of
-                    each employee with permissions allowed for late, Late comings, early leaving, day off, absent,
-                    public holidays, OT, bonus based on number of working hours etc....</p>
-                  <p>Framework: .Net Core</p>
-                  <p>Language: C#</p>
-                  <p>Modular: Asp.net Core/ MVC</p>
-                  <p>Frontend: Html, CSS, Bootstrap, JavaScript</p>
-                  <p>Backend: SQL Server 2014</p>
-                  <p>Development Duration: Dec 2022 - March 2023</p>
-                </div>
-              </div>
-            </details>
-          </article>
-
-        </div>
-      </div>
-    </section>
-    <section id="resume" class="section reveal">
-      <div class="container">
-        <h2>Resume</h2>
-        <p>
-          <a class="btn small" href="assets/Ashraf_CV.pdf" download="Ashraf_Ali_Shaik_Senior_Net_Developer_CV.pdf">
-            Download CV (PDF)
-          </a>
-          <a class="btn small ghost" href="assets/Ashraf_CV.pdf" target="_blank" rel="noopener">
-            Open in new tab
-          </a>
-        </p>
-
-        <div class="cv-viewer">
-
-          <iframe class="pdf-frame" src="assets/Ashraf_CV.pdf#toolbar=1" title="Ashraf Ali Shaik — Resume PDF">
-          </iframe>
-
-
-        </div>
-      </div>
-    </section>
-
-    <section id="documents" class="section reveal">
-      <div class="container">
-        <h2>Documents / Certifications</h2>
-
-        <div class="docs-grid">
-          <article class="doc-card">
-            <div class="doc-icon" aria-hidden="true">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor"
-                  opacity=".9" />
-                <path d="M14 2v6h6" stroke="currentColor" opacity=".9" />
-              </svg>
-            </div>
-            <div class="doc-meta">
-              <h3 class="doc-title">Resume (PDF)</h3>
-              <p class="doc-desc">Latest CV in PDF format</p>
-              <div class="doc-actions">
-                <a class="btn small" href="assets/Ashraf_CV.pdf" download>Download</a>
-                <a class="btn small ghost" href="assets/Ashraf_CV.pdf" target="_blank" rel="noopener">Preview</a>
-              </div>
-            </div>
-          </article>
-          <article class="doc-card">
-            <div class="doc-icon" aria-hidden="true">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor"
-                  opacity=".9" />
-                <path d="M14 2v6h6" stroke="currentColor" opacity=".9" />
-              </svg>
-            </div>
-            <div class="doc-meta">
-              <h3 class="doc-title">Armada Experience Certificate</h3>
-              <p class="doc-desc">PDF document</p>
-              <div class="doc-actions">
-                <a class="btn small" href="assets/Armada%20Experience%20Certificate.pdf" download>Download</a>
-                <a class="btn small ghost" href="assets/Armada%20Experience%20Certificate.pdf" target="_blank"
-                  rel="noopener">Preview</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="doc-card">
-            <div class="doc-icon" aria-hidden="true">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor"
-                  opacity=".9" />
-                <path d="M14 2v6h6" stroke="currentColor" opacity=".9" />
-              </svg>
-            </div>
-            <div class="doc-meta">
-              <h3 class="doc-title">ASP.NET Core 6.0 Certificate</h3>
-              <p class="doc-desc">Professional certification (PDF)</p>
-              <div class="doc-actions">
-                <a class="btn small" href="assets/ASP%20Dot%20Net%20Core%206.0%20Certificate.pdf" download>Download</a>
-                <a class="btn small ghost" href="assets/ASP%20Dot%20Net%20Core%206.0%20Certificate.pdf" target="_blank"
-                  rel="noopener">Preview</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="doc-card">
-            <div class="doc-icon" aria-hidden="true">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor"
-                  opacity=".9" />
-                <path d="M14 2v6h6" stroke="currentColor" opacity=".9" />
-              </svg>
-            </div>
-            <div class="doc-meta">
-              <h3 class="doc-title">CAMS Microsoft Certificate</h3>
-              <p class="doc-desc">Training certificate (PDF)</p>
-              <div class="doc-actions">
-                <a class="btn small" href="assets/Cams%20Microsoft%20Certificate.pdf" download>Download</a>
-                <a class="btn small ghost" href="assets/Cams%20Microsoft%20Certificate.pdf" target="_blank"
-                  rel="noopener">Preview</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="doc-card">
-            <div class="doc-icon" aria-hidden="true">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor"
-                  opacity=".9" />
-                <path d="M14 2v6h6" stroke="currentColor" opacity=".9" />
-              </svg>
-            </div>
-            <div class="doc-meta">
-              <h3 class="doc-title">DPS Appreciation</h3>
-              <p class="doc-desc">Appreciation letter (PDF)</p>
-              <div class="doc-actions">
-                <a class="btn small" href="assets/DPS-Appreciation.pdf" download>Download</a>
-                <a class="btn small ghost" href="assets/DPS-Appreciation.pdf" target="_blank" rel="noopener">Preview</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="doc-card">
-            <div class="doc-icon" aria-hidden="true">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor"
-                  opacity=".9" />
-                <path d="M14 2v6h6" stroke="currentColor" opacity=".9" />
-              </svg>
-            </div>
-            <div class="doc-meta">
-              <h3 class="doc-title">Migration Certificate</h3>
-              <p class="doc-desc">PDF document</p>
-              <div class="doc-actions">
-                <a class="btn small" href="assets/Migration%20Certificate.pdf" download>Download</a>
-                <a class="btn small ghost" href="assets/Migration%20Certificate.pdf" target="_blank"
-                  rel="noopener">Preview</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="doc-card">
-            <div class="doc-icon" aria-hidden="true">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor"
-                  opacity=".9" />
-                <path d="M14 2v6h6" stroke="currentColor" opacity=".9" />
-              </svg>
-            </div>
-            <div class="doc-meta">
-              <h3 class="doc-title">SSC Certificate</h3>
-              <p class="doc-desc">PDF document</p>
-              <div class="doc-actions">
-                <a class="btn small" href="assets/SSC%20Certificate.pdf" download>Download</a>
-                <a class="btn small ghost" href="assets/SSC%20Certificate.pdf" target="_blank"
-                  rel="noopener">Preview</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- <article class="doc-card">
-            <div class="doc-icon" aria-hidden="true">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor"
-                  opacity=".9" />
-                <path d="M14 2v6h6" stroke="currentColor" opacity=".9" />
-              </svg>
-            </div>
-            <div class="doc-meta">
-              <h3 class="doc-title">Work Permit</h3>
-              <p class="doc-desc">PDF document</p>
-              <div class="doc-actions">
-                <a class="btn small" href="assets/Work%20Permit.pdf" download>Download</a>
-                <a class="btn small ghost" href="assets/Work%20Permit.pdf" target="_blank" rel="noopener">Preview</a>
-              </div>
-            </div>
-          </article> -->
-
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section reveal">
-      <div class="container grid-2">
-        <div>
-          <h2>Contact</h2>
-          <ul class="contact-list">
-            <li><strong>Email</strong>: <a href="mailto:ashrafaliannu@gmail.com"
-                style="color: #0ea5e9;">ashrafaliannu@gmail.com</a></li>
-            <li><strong>Phone / WhatsApp</strong>: <a href="tel:+965-50325941" style="color: #0ea5e9;">+965-50325941</a>
-            </li>
-            <li><strong>Location</strong>: Farwaniya, Kuwait</li>
-          </ul>
-        </div>
-        <aside class="card">
-          <h3>Note</h3>
-          <p>Available for full-time roles and select freelance engagements.</p>
-        </aside>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>© 2025 Ashraf. All rights reserved.</p>
-      <a href="#hero" class="back-to-top" aria-label="Back to top">↑</a>
-    </div>
-
-  </footer>
-
-  <script src="assets/script.js" defer></script>
+    <script src="assets/script.js" defer></script>
 </body>
 
 </html>
